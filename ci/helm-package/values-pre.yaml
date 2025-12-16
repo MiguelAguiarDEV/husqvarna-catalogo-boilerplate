@@ -1,0 +1,59 @@
+replicaCount: 1
+
+image:
+  repository: 952729869933.dkr.ecr.eu-west-1.amazonaws.com/husqvarna-catalogo-2025
+  tag: b67a847b1bd9c37c5aa3bfe406f70d0d4162b65f
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: false
+  annotations: {}
+  name: ""
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: ""
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/whitelist-source-range: "178.60.255.139/32"
+  hosts:
+    - host: husqvarna-catalogo-2025.bysidecar.me
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+   - secretName: tls-husqvarna-catalogo-2025-bysidecar-me
+     hosts:
+       - husqvarna-catalogo-2025-pre.bysidecar.me
+
+env:
+- name: APP_ENV
+  value: prod
+- name: APP_SECRET
+  value: 50546dcc902d9a99ff22bfbde163628c1843912a
+- name: LEADS_URL
+  value: https://leads-pre.bysidecar.me/lead/store/
+- name: SOUID
+  value: "107"
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
+imagePullSecrets: []
+podAnnotations: {}
+podSecurityContext: {}
+securityContext: {}
+resources: {}

@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "HusqvarnaGothic";
+  src: url("/font/husqvarnagothic-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HusqvarnaGothic";
+  src: url("/font/HusqvarnaGothic-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "HusqvarnaGothic", sans-serif;
+  overflow: overlay;
+}
+
+@media (max-height: 1000px) {
+  .Slide9 {
+    transform: scale(0.92);
+  }
+}
+
+@media (max-height: 900px) {
+  .Slide9 {
+    transform: scale(0.82);
+  }
+}
+
+@media (max-height: 851px) {
+  .Slide3_BottomContent {
+    transform: scale(0.95);
+    transform-origin: bottom center;
+    left: 0 !important;
+  }
+  .Slide6_BottomContent {
+    transform: scale(0.85);
+    transform-origin: bottom center;
+    bottom: 30px !important;
+  }
+  .Slide6_BottomContent {
+    transform: scale(0.83);
+    transform-origin: bottom center;
+  }
+  .Slide7Content {
+    transform: translateX(-50%) scale(0.82);
+    transform-origin: top center;
+  }
+  .Slide7Grid {
+    height: auto;
+  }
+
+  .ProductDialogImage {
+    transform: scale(0.92);
+  }
+  .Slide9 {
+    transform: scale(0.82);
+  }
+}
+
+img {
+  object-fit: contain !important;
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.nyxidiom.com
+
+# Sitemaps
+Sitemap: https://www.nyxidiom.com/sitemap.xml
