@@ -1,0 +1,530 @@
+{
+  "catalogo-husqvarna-2026": {
+    "id": "catalogo-husqvarna-2026",
+    "background": "/images/background.jpg",
+    "slides": [
+      {
+        "id": "slide1",
+        "padding": "",
+        "className": "bg-transparent sm:pt-0",
+        "mobileViewports": 2,
+        "layout": {
+          "type": "flex",
+          "direction": "row",
+          "className": "h-full w-full",
+          "children": [
+            {
+              "id": "cover-image",
+              "className": "h-full w-full",
+              "content": {
+                "type": "image",
+                "src": "/images/{locale}/slide1.jpg",
+                "alt": "Catálogo Husqvarna 2026",
+                "className": "h-full w-full object-contain",
+                "width": 684,
+                "height": 967
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "slide2",
+        "padding": "p-[30px]",
+        "mobileViewports": 2,
+        "layout": {
+          "type": "flex",
+          "direction": "row",
+          "gap": "16px",
+          "className": "h-100 w-full",
+          "children": [
+            {
+              "id": "left-section",
+              "className": "h-full w-full max-w-[67.52%] max-h-[644px]",
+              "layout": {
+                "type": "flex",
+                "direction": "column",
+                "gap": "20px",
+                "children": [
+                  {
+                    "id": "main-image-container",
+                    "className": "h-full w-full max-w-[763px] max-h-[644px]",
+                    "content": {
+                      "type": "image",
+                      "src": "/images/{locale}/slide2/background.jpg",
+                      "alt": "slide2 background",
+                      "className": "h-full w-full max-w-[763px] max-h-[644px]",
+                      "width": 763,
+                      "height": 644
+                    }
+                  },
+                  {
+                    "id": "bottom-row",
+                    "className": "flex flex-row max-h-[16%] gap-16 max-w-[100%]",
+                    "content": {
+                      "type": "nestedFlex",
+                      "layout": {
+                        "type": "flex",
+                        "direction": "row",
+                        "gap": "64px",
+                        "children": [
+                          {
+                            "id": "text-section",
+                            "content": {
+                              "type": "nestedFlex",
+                              "layout": {
+                                "type": "flex",
+                                "direction": "column",
+                                "children": [
+                                  {
+                                    "id": "subtitle",
+                                    "content": {
+                                      "type": "image",
+                                      "src": "/images/{locale}/slide2/subtitle.png",
+                                      "alt": "Subtitulo",
+                                      "className": "w-auto h-auto",
+                                      "width": 155,
+                                      "height": 13
+                                    }
+                                  },
+                                  {
+                                    "id": "description",
+                                    "className": "mt-[10px]",
+                                    "content": {
+                                      "type": "image",
+                                      "src": "/images/{locale}/slide2/description.png",
+                                      "alt": "Descripción",
+                                      "className": "w-auto h-auto mt-[10px]",
+                                      "width": 535,
+                                      "height": 95
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "id": "logo",
+                            "content": {
+                              "type": "image",
+                              "src": "/images/{locale}/slide2/husqvarnaLogo.png",
+                              "alt": "Husqvarna Logo",
+                              "className": "w-auto h-auto"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "right-grid",
+              "className": "max-w-[30%]",
+              "layout": {
+                "type": "grid",
+                "columns": 2,
+                "gap": "16px",
+                "cells": [
+                  {
+                    "id": "card-energia",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/energia.jpg",
+                      "alt": "Energía hidráulica",
+                      "imgClassName": "!max-h-[251px] !max-w-[169px] p-30",
+                      "variant": "floating",
+                      "buttonText": "",
+                      "popupKey": "popUp1",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-maquinaria",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/maquinaria.jpg",
+                      "alt": "Maquinaria innovadora",
+                      "imgClassName": "!max-h-[251px] !max-w-[169px] p-30",
+                      "variant": "floating",
+                      "popupKey": "popUp2",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-reputacion",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/reputacion.jpg",
+                      "alt": "Reputación internacional",
+                      "imgClassName": "!max-h-[251px] !max-w-[169px] p-30",
+                      "variant": "floating",
+                      "popupKey": "popUp3",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-innovacion",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/innovacion.jpg",
+                      "alt": "Innovación en motosierras",
+                      "imgClassName": "!max-h-[251px] !max-w-[169px] p-30",
+                      "variant": "floating",
+                      "popupKey": "popUp4",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-pioneros",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/pioneros.jpg",
+                      "alt": "Pioneros en el mercado",
+                      "imgClassName": "!max-h-[251px] !max-w-[169px] p-30",
+                      "variant": "floating",
+                      "popupKey": "popUp5",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-soluciones",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/soluciones.jpg",
+                      "alt": "Soluciones sostenibles",
+                      "imgClassName": "!max-h-[251px] !max-w-[169px] p-30",
+                      "variant": "floating",
+                      "popupKey": "popUp6",
+                      "buttonClassName": "hidden"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "popups": {
+          "popUp1": [{"src": "/images/{locale}/slide2/popup/popup_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp2": [{"src": "/images/{locale}/slide2/popup/popup_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp3": [{"src": "/images/{locale}/slide2/popup/popup_02.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp4": [{"src": "/images/{locale}/slide2/popup/popup_03.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp5": [{"src": "/images/{locale}/slide2/popup/popup_04.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp6": [{"src": "/images/{locale}/slide2/popup/popup_05.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}]
+        }
+      },
+      {
+        "id": "slide3",
+        "padding": "p-[30px]",
+        "className": "!bg-[#EEEEED]",
+        "mobileViewports": 2,
+        "layout": {
+          "type": "grid",
+          "columns": 2,
+          "gap": "60px",
+          "className": "SlideContainer",
+          "cells": [
+            {
+              "id": "left-column",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "column",
+                  "gap": "15px",
+                  "children": [
+                    {
+                      "id": "corte-tala",
+                      "className": "h-full max-h-[384px] w-full max-w-[535px]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide3/corteYTala.png",
+                        "alt": "Corte y Tala",
+                        "className": "cursor-pointer object-fill",
+                        "width": 535,
+                        "height": 384,
+                        "hoverScale": true,
+                        "onClick": {"action": "menu", "target": "Corte y tala"}
+                      }
+                    },
+                    {
+                      "id": "bottom-row",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "15px",
+                          "children": [
+                            {
+                              "id": "cesped",
+                              "className": "h-full max-h-[383px] w-full max-w-[260px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide3/ciudadoCesped.png",
+                                "alt": "Cuidado del césped",
+                                "className": "cursor-pointer object-fill",
+                                "width": 260,
+                                "height": 383,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Cuidado del césped"}
+                              }
+                            },
+                            {
+                              "id": "limpieza",
+                              "className": "h-full max-h-[383px] w-full max-w-[260px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide3/limpieza.png",
+                                "alt": "Limpieza",
+                                "className": "cursor-pointer object-fill",
+                                "width": 260,
+                                "height": 383,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Limpieza"}
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "right-column",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "row",
+                  "gap": "15px",
+                  "children": [
+                    {
+                      "id": "right-left-half",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "column",
+                          "gap": "15px",
+                          "children": [
+                            {
+                              "id": "recorte",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide3/recorteDesbroce.png",
+                                "alt": "Recorte y desbroce",
+                                "className": "cursor-pointer object-fill",
+                                "width": 260,
+                                "height": 463,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Recorte y desbroce"}
+                              }
+                            },
+                            {
+                              "id": "suelo",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide3/cuidadoSuelo.png",
+                                "alt": "Cuidado del suelo",
+                                "className": "cursor-pointer object-fill",
+                                "width": 260,
+                                "height": 304,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Cuidado del suelo"}
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "right-right-half",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "column",
+                          "gap": "15px",
+                          "children": [
+                            {
+                              "id": "naturaleza",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide3/respetoNaturaleza.png",
+                                "alt": "Respeto por la naturaleza",
+                                "className": "cursor-pointer object-fill",
+                                "width": 260,
+                                "height": 384,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Respeto a la naturaleza"}
+                              }
+                            },
+                            {
+                              "id": "generadores",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide3/generadores.png",
+                                "alt": "Generadores y motobombas",
+                                "className": "cursor-pointer object-fill",
+                                "width": 260,
+                                "height": 169,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Generadores y motobombas"}
+                              }
+                            },
+                            {
+                              "id": "ropa",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide3/ropa.png",
+                                "alt": "Ropa y accesorios",
+                                "className": "cursor-pointer object-fill",
+                                "width": 260,
+                                "height": 199,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Ropa y accesorios"}
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "slide4",
+        "padding": "pl-[20px] pt-[20px]",
+        "mobileViewports": 2,
+        "layout": {
+          "type": "flex",
+          "direction": "row",
+          "children": [
+            {
+              "id": "left-content",
+              "className": "flex flex-col justify-center w-1/2",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "column",
+                  "children": [
+                    {
+                      "id": "futuro-mejor",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide4/futuroMejor.jpg",
+                        "alt": "Por un futuro mejor",
+                        "className": "object-fill w-[95%]"
+                      }
+                    },
+                    {
+                      "id": "footer-icons",
+                      "className": "mt-[3%]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide4/footerIcons.jpg",
+                        "alt": "Iconos del pie de página",
+                        "className": "object-fill mt-[3%] w-[95%]"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "right-content",
+              "className": "flex flex-col w-1/2",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "column",
+                  "children": [
+                    {
+                      "id": "first-row",
+                      "className": "flex flex-row mb-1 justify-between max-w-[100%]",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "className": "justify-between",
+                          "children": [
+                            {
+                              "id": "bateria-flexible",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide4/bateriaFlexible.png",
+                                "alt": "Batería flexible",
+                                "className": "object-fill w-[50%]"
+                              }
+                            },
+                            {
+                              "id": "maquina-bateria",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide4/maquinaConBateria.png",
+                                "alt": "Máquina con batería",
+                                "className": "object-fill w-[50%]"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "second-row",
+                      "className": "pl-1 h-full max-h-[430px] w-full max-w-[100%] pr-[30px] mt-[3.5%]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide4/gustoPorMaquinasBateria.png",
+                        "alt": "Gusto por máquinas con batería",
+                        "className": "object-fill w-[95%]"
+                      }
+                    },
+                    {
+                      "id": "third-row",
+                      "className": "pl-6 h-full max-h-[179px] w-full max-w-[100%] pr-[30px] mt-[3.5%]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide4/vidaUtil.png",
+                        "alt": "Prolonga la vida útil",
+                        "className": "object-fill w-[95%]"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "uiElements": {
+      "es": {
+        "watch_video": "VER vídeo",
+        "see_more": "Ver más",
+        "shop_now": "Comprar ahora"
+      },
+      "cat": {
+        "watch_video": "VER vídeo",
+        "see_more": "Ver més",
+        "shop_now": "Comprar ara"
+      },
+      "pt": {
+        "watch_video": "VER vídeo",
+        "see_more": "Ver mais",
+        "shop_now": "Comprar agora"
+      }
+    }
+  }
+}
