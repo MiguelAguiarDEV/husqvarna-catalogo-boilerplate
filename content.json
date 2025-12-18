@@ -1,0 +1,206 @@
+{
+	"catalogo-husqvarna-2026": {
+		"background": "background.jpg",
+		"slides": {
+			"slide2": {
+				"images": {
+					"background": "background.jpg",
+					"background_1": "background_1.png",
+					"backgroundRight": "backgroundRight.png",
+					"description": "description.png",
+					"energia": "energia.jpg",
+					"husqvarnaLogo": "husqvarnaLogo.png",
+					"innovacion": "innovacion.jpg",
+					"maquinaria": "maquinaria.jpg",
+					"pioneros": "pioneros.jpg",
+					"reputacion": "reputacion.jpg",
+					"soluciones": "soluciones.jpg",
+					"subtitle": "subtitle.png"
+				},
+				"popups": {
+					"popup_00": "popup/popup_00.png",
+					"popup_01": "popup/popup_01.png",
+					"popup_02": "popup/popup_02.png",
+					"popup_03": "popup/popup_03.png",
+					"popup_04": "popup/popup_04.png",
+					"popup_05": "popup/popup_05.png"
+				},
+				"content": {
+					"es": {
+						"title": "INNOVADORES DESDE 1689",
+						"description": "CONÓCENOS",
+						"subtitle": "NEUSTRO LEGADO",
+						"description_2": "Ya desde nuestros inicios en 1689, nuestra pasión por la innovación, el desarrollo y la precisión ha tenido como resultado una larga línea de productos y soluciones prestigiosas...",
+						"cards": {
+							"card_1": {
+								"title": "1689",
+								"description": "ENERGÍA HIDRAULICA",
+								"button": "SABER MÁS"
+							},
+							"card_2": {
+								"title": "1903",
+								"description": "REPUTACIÓN INTERNACIONAL",
+								"button": "SABER MÁS"
+							},
+							"card_3": {
+								"title": "1995",
+								"description": "PRIMEROS EN EL MERCADO",
+								"button": "SABER MÁS"
+							},
+							"card_4": {
+								"title": "1872",
+								"description": "MAQUINARIA INNOVADORA",
+								"button": "SABER MÁS"
+							},
+							"card_5": {
+								"title": "1959",
+								"description": "INNOVACIÓN EN MOTOSIERRAS",
+								"button": "SABER MÁS"
+							},
+							"card_6": {
+								"title": "2012",
+								"description": "SOLUCIONES SOSTENIBLES",
+								"button": "SABER MÁS"
+							}
+						}
+					},
+					"cat": {
+						"title": "INNOVADORS DESDE 1689",
+						"description": "CONÉIX-NOS",
+						"subtitle": "NEUSTRO LEGADO",
+						"description_2": "Ya desde nuestros inicios en 1689, nuestra pasión por la innovación...",
+						"cards": {
+							"card_1": {
+								"title": "1689",
+								"description": "ENERGÍA HIDRAULICA",
+								"button": "SABER MÁS"
+							},
+							"card_2": {
+								"title": "1903",
+								"description": "REPUTACIÓN INTERNACIONAL",
+								"button": "SABER MÁS"
+							},
+							"card_3": {
+								"title": "1995",
+								"description": "PRIMEROS EN EL MERCADO",
+								"button": "SABER MÁS"
+							},
+							"card_4": {
+								"title": "1872",
+								"description": "MAQUINARIA INNOVADORA",
+								"button": "SABER MÁS"
+							},
+							"card_5": {
+								"title": "1959",
+								"description": "INNOVACIÓN EN MOTOSIERRAS",
+								"button": "SABER MÁS"
+							},
+							"card_6": {
+								"title": "2012",
+								"description": "SOLUCIONES SOSTENIBLES",
+								"button": "SABER MÁS"
+							}
+						}
+					},
+					"pt": {
+						"title": "INNOVADORES DESDE 1689",
+						"description": "CONÓCENOS",
+						"subtitle": "NEUSTRO LEGADO",
+						"description_2": "Ya desde nuestros inicios en 1689, nuestra pasión por la innovación..."
+					}
+				}
+			},
+			"slide3": {
+				"images": {
+					"ciudadoCesped": "ciudadoCesped.png",
+					"corteYTala": "corteYTala.png",
+					"cuidadoSuelo": "cuidadoSuelo.png",
+					"generadores": "generadores.png",
+					"limpieza": "limpieza.png",
+					"recorteDesbroce": "recorteDesbroce.png",
+					"respetoNaturaleza": "respetoNaturaleza.png",
+					"ropa": "ropa.png"
+				},
+				"content": {
+					"es": {
+						"title": "INDICE",
+						"cardsLeft": {
+							"card_1": {
+								"title": "Corte y tala",
+								"description": "Desde pequeños trabajos de corte hasta el cuidado profesional de árboles o silvicultura.",
+								"button": "VER GAMA"
+							},
+							"card_2": {
+								"title": "Cuidado del césped",
+								"description": "Tú decides la manera de cuidar el césped.",
+								"button": "VER GAMA"
+							},
+							"card_3": {
+								"title": "LIMPIEZA",
+								"button": "VER GAMA"
+							}
+						}
+					}
+				}
+			},
+			"slide15": {
+				"images": {
+					"fondo": "fondo.png",
+					"verVideo": "verVideo.png"
+				},
+				"content": {
+					"es": {
+						"bloqImg_title": "HIDROLIMPIADORAS HUSQVARNA",
+						"bloqImg_text": "Para una limpieza con menos agua. Desarrolladas para llevar a cabo cualquier trabajo de limpieza...",
+						"caracteristicas_delante": {
+							"1": "La activación del gatillo se ajusta perfectamente a los dedos...",
+							"7": "Bomba de metal: mayor fiabilidad y vida útil"
+						},
+						"caracteristicas_detras": {
+							"1": "El apagado automático detiene el motor cuando se suelta el gatillo",
+							"4": "Almacenamiento de cable en la máquina que permite instalación rápida y evita que se enrede el cable"
+						}
+					}
+				}
+			},
+			"slide17": {
+				"content": {
+					"es": {
+						"textSearch_1": "ROPA DE PROTECCIÓN PARA EL MAYOR RENDIMIENTO...",
+						"textSearch_2": "ROPA PARA OCIO XPLORER DISEÑADO PARA LA VIDA AL AIRE LIBRE..."
+					}
+				}
+			}
+		},
+		"ui_elements": {
+			"es": {
+				"elements": {
+					"watch_video": "VER vídeo",
+					"see_more": "Ver más",
+					"shop_now": "Comprar ahora"
+				},
+				"header": {
+					"search": "Búsqueda",
+					"menu": {
+						"AUTOMOWERS": "Automowers",
+						"RIDERS": "Riders"
+					}
+				}
+			},
+			"cat": {
+				"elements": {
+					"watch_video": "VER vídeo",
+					"see_more": "Ver més",
+					"shop_now": "Comprar ara"
+				}
+			},
+			"pt": {
+				"elements": {
+					"watch_video": "VER vídeo",
+					"see_more": "Ver mais",
+					"shop_now": "Comprar agora"
+				}
+			}
+		}
+	}
+}
