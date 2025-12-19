@@ -108,7 +108,8 @@ export type CellContent =
   | ButtonContent
   | NestedGridContent
   | NestedFlexContent
-  | OverlayContent;
+  | OverlayContent
+  | GridOverlayContent;
 
 export interface ImageContent {
   type: 'image';
@@ -198,6 +199,39 @@ export interface OverlayContent {
   position: string;
   /** Children to render in the overlay */
   children: CellContent[];
+}
+
+/** Grid overlay with 12-column positioning system */
+export interface GridOverlayContent {
+  type: 'gridOverlay';
+  /** Background image or content */
+  background: ImageContent;
+  /** Overlay items positioned using 12-column grid */
+  items: GridOverlayItem[];
+  /** Container class name */
+  className?: string;
+}
+
+/** Item positioned within a 12x12 grid overlay */
+export interface GridOverlayItem {
+  /** Unique identifier */
+  id?: string;
+  /** Column start position (1-12) */
+  colStart: number;
+  /** Number of columns to span (1-12) */
+  colSpan: number;
+  /** Row start position (1-12) */
+  rowStart: number;
+  /** Number of rows to span (1-12) */
+  rowSpan: number;
+  /** Content to render at this position */
+  content: Exclude<CellContent, GridOverlayContent>;
+  /** Additional CSS classes for the item container */
+  className?: string;
+  /** Horizontal alignment within the grid cell */
+  align?: 'start' | 'center' | 'end';
+  /** Vertical alignment within the grid cell */
+  verticalAlign?: 'start' | 'center' | 'end';
 }
 
 // ============================================================================
@@ -317,6 +351,9 @@ export const isNestedFlexContent = (content: CellContent): content is NestedFlex
 
 export const isOverlayContent = (content: CellContent): content is OverlayContent =>
   content.type === 'overlay';
+
+export const isGridOverlayContent = (content: CellContent): content is GridOverlayContent =>
+  content.type === 'gridOverlay';
 
 // ============================================================================
 // Helper Functions

@@ -20,6 +20,7 @@ import {
   isNestedGridContent,
   isNestedFlexContent,
   isOverlayContent,
+  isGridOverlayContent,
   interpolateLocalePath,
   ClickAction,
 } from '@/types/slide.types';
@@ -27,6 +28,7 @@ import { ProductCard } from '../ProductCard';
 import { SlideTitle } from '../SlideTitle';
 import { Button } from '../Button';
 import { GridRenderer } from './GridRenderer';
+import { GridOverlayRenderer } from './GridOverlayRenderer';
 import { MenuLabels } from '../Header';
 
 interface CellRendererProps {
@@ -255,6 +257,18 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
           />
         ))}
       </div>
+    );
+  }
+
+  // Grid overlay content (12-column positioning system)
+  if (isGridOverlayContent(content)) {
+    return (
+      <GridOverlayRenderer
+        config={content}
+        isActive={isActive}
+        onClickMenu={onClickMenu}
+        onOpenPopup={onOpenPopup}
+      />
     );
   }
 

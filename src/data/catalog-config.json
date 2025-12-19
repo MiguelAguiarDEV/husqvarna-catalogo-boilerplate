@@ -108,11 +108,14 @@
                           },
                           {
                             "id": "logo",
+                            "className": "flex items-center",
                             "content": {
                               "type": "image",
                               "src": "/images/{locale}/slide2/husqvarnaLogo.png",
                               "alt": "Husqvarna Logo",
-                              "className": "w-[10%] h-auto"
+                              "className": "w-auto h-auto",
+                              "width": 102,
+                              "height": 118
                             }
                           }
                         ]
