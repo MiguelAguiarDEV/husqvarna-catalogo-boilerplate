@@ -61,14 +61,21 @@ export const SlideComponent: React.FC<SlideComponentProps> = ({
     <>
       <CarouselSlide
         key={config.id}
-        className={cn(config.padding, config.className)}
+        className={cn('catalog-slide', `catalog-slide--${config.id}`, config.padding, config.className)}
       >
-        <GridRenderer
-          layout={config.layout}
-          isActive={isActive}
-          onOpenPopup={handleOpenPopup}
-          onClickMenu={onClickMenu}
-        />
+        <div 
+          className="catalog-slide__content h-full w-full"
+          data-slide-id={config.id}
+          data-component="SlideComponent"
+        >
+          <GridRenderer
+            layout={config.layout}
+            isActive={isActive}
+            onOpenPopup={handleOpenPopup}
+            onClickMenu={onClickMenu}
+            className="h-full w-full"
+          />
+        </div>
       </CarouselSlide>
 
       {/* Product popup dialog */}

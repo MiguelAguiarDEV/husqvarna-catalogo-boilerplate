@@ -15,9 +15,7 @@ export const CarouselSlide = ({
       <MainContainer
         className={cn(
           `
-            relative m-auto h-full w-full bg-white text-white
-
-            md:h-[calc(100vh-54px)]
+            relative m-auto h-[calc(100vh-54px)] w-full bg-white text-white
           `,
           className,
         )}

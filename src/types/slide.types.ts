@@ -120,7 +120,9 @@ export interface ImageContent {
   width?: number;
   /** Image height */
   height?: number;
-  /** Additional CSS classes for the image */
+  /** CSS classes for the container wrapper div */
+  containerClassName?: string;
+  /** CSS classes for the image element itself */
   className?: string;
   /** Click action */
   onClick?: ClickAction;

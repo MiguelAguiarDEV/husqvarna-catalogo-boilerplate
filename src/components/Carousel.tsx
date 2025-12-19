@@ -124,9 +124,7 @@ export const Carousel = ({
               zoom={zoom}
               key={index}
               className={`
-                !flex items-center justify-center
-
-                md:!h-[calc(100vh-54px)]
+                !flex items-center justify-center h-[calc(100vh-54px)]
               `}
             >
               {slide}

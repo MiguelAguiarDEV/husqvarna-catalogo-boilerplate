@@ -9,6 +9,7 @@ import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
+import { cn } from '@/utils/misc';
 import { 
   CellContent,
   isImageContent,
@@ -65,37 +66,63 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
   };
 
   // Image content
+  // Images are wrapped in a container div so we can control sizing from the parent
+  // Use containerClassName for the wrapper and className for the image itself
   if (isImageContent(content)) {
     const src = interpolateLocalePath(content.src, locale);
     
+    // Determine object-fit: default to 'cover' if container has full dimensions
+    const hasFullDimensions = content.className?.includes('object-cover') || 
+                              content.className?.includes('object-contain') ||
+                              content.className?.includes('object-fill');
+    const objectFitClass = hasFullDimensions ? '' : 'object-cover';
+    
     if (content.hoverScale) {
       return (
-        <motion.img
-          loading="lazy"
-          src={src}
-          alt={content.alt}
-          className={content.className}
-          width={content.width}
-          height={content.height}
-          whileHover={{ scale: 1.1 }}
-          onClick={() => handleClick(content.onClick)}
-          style={{ cursor: content.onClick ? 'pointer' : 'default' }}
-        />
+        <div 
+          className={cn('catalog-image-container', content.containerClassName)}
+          data-component="CellRenderer"
+          data-content-type="image"
+          data-hover-scale="true"
+        >
+          <motion.img
+            loading="lazy"
+            src={src}
+            alt={content.alt}
+            className={cn('catalog-image catalog-image--hover h-full w-full', objectFitClass, content.className)}
+            width={content.width}
+            height={content.height}
+            whileHover={{ scale: 1.1 }}
+            onClick={() => handleClick(content.onClick)}
+            style={{ cursor: content.onClick ? 'pointer' : 'default' }}
+          />
+        </div>
       );
     }
     
+    // For Next.js Image, we need to handle sizing differently
+    // If no width/height provided, use fill mode
+    const useFill = !content.width && !content.height;
+    
     return (
-      <Image
-        loading="lazy"
-        src={src}
-        alt={content.alt}
-        className={content.className}
-        width={content.width ?? 0}
-        height={content.height ?? 0}
-        sizes={!content.width ? '100vw' : undefined}
-        style={!content.width ? { width: '100%', height: 'auto' } : undefined}
-        onClick={() => handleClick(content.onClick)}
-      />
+      <div 
+        className={cn('catalog-image-container relative', content.containerClassName)}
+        data-component="CellRenderer"
+        data-content-type="image"
+      >
+        <Image
+          loading="lazy"
+          src={src}
+          alt={content.alt}
+          className={cn('catalog-image', objectFitClass, content.className)}
+          {...(useFill 
+            ? { fill: true } 
+            : { width: content.width ?? 0, height: content.height ?? 0 }
+          )}
+          sizes={useFill ? '100vw' : undefined}
+          onClick={() => handleClick(content.onClick)}
+        />
+      </div>
     );
   }
 
@@ -104,16 +131,23 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
     const imageSrc = interpolateLocalePath(content.imageSrc, locale);
     
     return (
-      <ProductCard
-        imageSrc={imageSrc}
-        alt={content.alt}
-        imgClassName={content.imgClassName}
-        variant={content.variant}
-        buttonText={content.buttonText ?? ''}
-        buttonClassName={content.buttonClassName}
-        buttonContainerClassName={content.buttonContainerClassName}
-        onClick={() => content.popupKey && onOpenPopup?.(content.popupKey)}
-      />
+      <div 
+        className="catalog-product-card"
+        data-component="CellRenderer"
+        data-content-type="productCard"
+        data-popup-key={content.popupKey}
+      >
+        <ProductCard
+          imageSrc={imageSrc}
+          alt={content.alt}
+          imgClassName={content.imgClassName}
+          variant={content.variant}
+          buttonText={content.buttonText ?? ''}
+          buttonClassName={content.buttonClassName}
+          buttonContainerClassName={content.buttonContainerClassName}
+          onClick={() => content.popupKey && onOpenPopup?.(content.popupKey)}
+        />
+      </div>
     );
   }
 
@@ -121,7 +155,11 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
   if (isTextContent(content)) {
     const Element = content.element ?? 'p';
     return (
-      <Element className={content.className}>
+      <Element 
+        className={cn('catalog-text', content.className)}
+        data-component="CellRenderer"
+        data-content-type="text"
+      >
         {t(content.textKey)}
       </Element>
     );
@@ -130,55 +168,83 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
   // Title content
   if (isTitleContent(content)) {
     return (
-      <SlideTitle
-        className={content.className}
-        variant={content.variant ?? 'bg-transparent'}
-        title={t(content.titleKey)}
-        isActive={isActive}
-      />
+      <div
+        className="catalog-title"
+        data-component="CellRenderer"
+        data-content-type="title"
+      >
+        <SlideTitle
+          className={content.className}
+          variant={content.variant ?? 'bg-transparent'}
+          title={t(content.titleKey)}
+          isActive={isActive}
+        />
+      </div>
     );
   }
 
   // Button content
   if (isButtonContent(content)) {
     return (
-      <Button
-        className={content.className}
-        onClick={() => handleClick(content.onClick)}
+      <div
+        className="catalog-button"
+        data-component="CellRenderer"
+        data-content-type="button"
       >
-        {t(content.textKey)}
-      </Button>
+        <Button
+          className={content.className}
+          onClick={() => handleClick(content.onClick)}
+        >
+          {t(content.textKey)}
+        </Button>
+      </div>
     );
   }
 
   // Nested grid content
   if (isNestedGridContent(content)) {
     return (
-      <GridRenderer
-        layout={content.layout}
-        isActive={isActive}
-        onOpenPopup={onOpenPopup}
-        onClickMenu={onClickMenu}
-      />
+      <div
+        className="catalog-nested-grid"
+        data-component="CellRenderer"
+        data-content-type="nestedGrid"
+      >
+        <GridRenderer
+          layout={content.layout}
+          isActive={isActive}
+          onOpenPopup={onOpenPopup}
+          onClickMenu={onClickMenu}
+        />
+      </div>
     );
   }
 
   // Nested flex content
   if (isNestedFlexContent(content)) {
     return (
-      <GridRenderer
-        layout={content.layout}
-        isActive={isActive}
-        onOpenPopup={onOpenPopup}
-        onClickMenu={onClickMenu}
-      />
+      <div
+        className="catalog-nested-flex"
+        data-component="CellRenderer"
+        data-content-type="nestedFlex"
+      >
+        <GridRenderer
+          layout={content.layout}
+          isActive={isActive}
+          onOpenPopup={onOpenPopup}
+          onClickMenu={onClickMenu}
+        />
+      </div>
     );
   }
 
   // Overlay content
   if (isOverlayContent(content)) {
     return (
-      <div className={content.position}>
+      <div 
+        className={cn('catalog-overlay', content.position)}
+        data-component="CellRenderer"
+        data-content-type="overlay"
+      >
         {content.children.map((child, index) => (
           <CellRenderer
             key={index}

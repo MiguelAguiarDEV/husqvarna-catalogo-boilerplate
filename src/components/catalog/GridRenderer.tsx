@@ -46,7 +46,10 @@ export const GridRenderer: React.FC<GridRendererProps> = ({
 
     return (
       <div
-        className={cn('grid', layout.className, className)}
+        className={cn('catalog-grid', layout.className, className)}
+        data-component="GridRenderer"
+        data-layout-type="grid"
+        data-columns={layout.columns}
         style={{
           gridTemplateColumns,
           gridTemplateRows,
@@ -75,6 +78,7 @@ export const GridRenderer: React.FC<GridRendererProps> = ({
     return (
       <div
         className={cn(
+          'catalog-flex',
           'flex',
           flexDirection,
           alignItems,
@@ -82,12 +86,20 @@ export const GridRenderer: React.FC<GridRendererProps> = ({
           layout.className,
           className
         )}
+        data-component="GridRenderer"
+        data-layout-type="flex"
+        data-direction={layout.direction}
         style={{ gap: layout.gap }}
       >
         {layout.children.map((child, index) => {
           if (isLayoutWrapper(child)) {
             return (
-              <div key={child.id ?? index} className={child.className}>
+              <div 
+                key={child.id ?? index} 
+                className={cn('catalog-layout-wrapper', child.className)}
+                data-component="LayoutWrapper"
+                data-wrapper-id={child.id}
+              >
                 <GridRenderer
                   layout={child.layout}
                   isActive={isActive}
@@ -139,7 +151,13 @@ const GridCellRenderer: React.FC<GridCellRendererProps> = ({
   if (cell.height) style.height = cell.height;
 
   return (
-    <div className={cell.className} style={style}>
+    <div 
+      className={cn('catalog-cell', `catalog-cell--${cell.id}`, cell.className)} 
+      data-component="GridCell"
+      data-cell-id={cell.id}
+      data-content-type={cell.content.type}
+      style={style}
+    >
       <CellRenderer
         content={cell.content}
         isActive={isActive}

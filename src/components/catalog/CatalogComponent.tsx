@@ -2,7 +2,7 @@
  * CatalogComponent
  * 
  * Main catalog controller that manages slides, navigation, and responsive behavior.
- * Handles mobile viewport switching and provides search functionality.
+ * Mobile viewports use CSS transforms to scale and translate desktop slides.
  */
 
 import { useMemo } from 'react';
@@ -43,7 +43,7 @@ export const CatalogComponent: React.FC<CatalogComponentProps> = ({
       ));
     }
 
-    // Mobile: Generate viewport slides
+    // Mobile: Generate viewport slides using CSS transforms
     const mobileSlides: React.ReactNode[] = [];
     
     // First slide (cover) renders as-is
@@ -59,7 +59,7 @@ export const CatalogComponent: React.FC<CatalogComponentProps> = ({
       );
     }
 
-    // Generate viewport slides for each desktop slide
+    // Generate viewport slides for each desktop slide using CSS transforms
     let mobileIndex = 1;
     for (let i = 1; i < config.slides.length; i++) {
       const slideConfig = config.slides[i];
@@ -101,7 +101,20 @@ export const CatalogComponent: React.FC<CatalogComponentProps> = ({
 
 /**
  * Mobile viewport slide wrapper
- * Uses CSS transforms to show only a portion of the desktop slide
+ * 
+ * Uses CSS transforms to show a portion of the desktop slide:
+ * - Scale 2x to make the slide fill the mobile viewport
+ * - Translate on X axis to show left half (viewport 0) or right half (viewport 1)
+ * 
+ * For mobileViewports: 2 (left/right split):
+ *   - Viewport 0: scale(2), origin left center → shows left half
+ *   - Viewport 1: scale(2), origin right center → shows right half
+ * 
+ * For mobileViewports: 4 (quadrant split):
+ *   - Viewport 0: top-left quadrant
+ *   - Viewport 1: top-right quadrant
+ *   - Viewport 2: bottom-left quadrant
+ *   - Viewport 3: bottom-right quadrant
  */
 interface MobileViewportSlideProps {
   config: SlideConfig;
@@ -121,30 +134,37 @@ const MobileViewportSlide: React.FC<MobileViewportSlideProps> = ({
   // Calculate transform values based on viewport position
   const transformStyle = useMemo((): React.CSSProperties => {
     if (totalViewports === 2) {
-      // Left/Right split
-      const translateX = viewportIndex === 0 ? '0%' : '-100%';
+      // Left/Right split: scale 2x and use transform-origin to show correct half
+      // Viewport 0 = left half, Viewport 1 = right half
       return {
-        transform: `translateX(${translateX}) scale(2)`,
-        transformOrigin: viewportIndex === 0 ? 'left center' : 'right center',
+        transform: 'scale(2)',
+        transformOrigin: viewportIndex === 0 ? 'top left' : 'top right',
+        width: '100%',
+        height: '100%',
       };
     }
     
     // 4-way split (quadrants)
     const col = viewportIndex % 2;
     const row = Math.floor(viewportIndex / 2);
-    const translateX = col === 0 ? '0%' : '-100%';
-    const translateY = row === 0 ? '0%' : '-100%';
     const originX = col === 0 ? 'left' : 'right';
     const originY = row === 0 ? 'top' : 'bottom';
     
     return {
-      transform: `translate(${translateX}, ${translateY}) scale(2)`,
+      transform: 'scale(2)',
       transformOrigin: `${originX} ${originY}`,
+      width: '100%',
+      height: '100%',
     };
   }, [viewportIndex, totalViewports]);
 
   return (
-    <div className="overflow-hidden h-full w-full">
+    <div 
+      className="catalog-mobile-viewport overflow-hidden h-full w-full"
+      data-component="MobileViewportSlide"
+      data-viewport-index={viewportIndex}
+      data-total-viewports={totalViewports}
+    >
       <div style={transformStyle}>
         <SlideComponent
           config={config}
