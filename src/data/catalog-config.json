@@ -1548,6 +1548,195 @@
             {"src": "/images/{locale}/slide11/profesional/carrusel-rider-pro_06_v2.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/riders/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Riders Profesional", "id": "18716", "price": "", "category": "Rider", "variant": "Profesional"}}
           ]
         }
+      },
+      {
+        "id": "slide12",
+        "mobileViewports": 2,
+        "style": { "padding": "30px", "width": "100%" },
+        "layout": {
+          "type": "flex",
+          "direction": "row",
+          "gap": "12px",
+          "style": { "display": "flex", "flexDirection": "row", "gap": "12px", "justifyContent": "center", "width": "100%", "height": "100%" },
+          "children": [
+            {
+              "id": "left-column",
+              "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%" },
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "column",
+                  "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%" },
+                  "children": [
+                    {
+                      "id": "main-background",
+                      "style": { "maxWidth": "535px", "maxHeight": "511px", "width": "100%", "height": "100%" },
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide12/midBackgroundLeft.png",
+                        "alt": "background left",
+                        "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                        "width": 535,
+                        "height": 511
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "right-grid",
+              "style": { "width": "45%", "height": "100%" },
+              "layout": {
+                "type": "grid",
+                "columns": 2,
+                "rows": 3,
+                "gap": "12px",
+                "style": { "display": "grid", "gridTemplateColumns": "1fr 1fr", "gridTemplateRows": "1fr 1fr 1fr", "gap": "12px", "alignItems": "center", "justifyContent": "center", "width": "100%", "height": { "mobile": "50%", "desktop": "100%" } },
+                "cells": [
+                  {
+                    "id": "card-electricas",
+                    "style": { "width": "100%", "height": "100%" },
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide12/carousel_electricasYBateria.jpg",
+                      "alt": "Motosierra eléctrica y a batería",
+                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                      "variant": "floating",
+                      "popupKey": "electricasYBateria",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-hobby",
+                    "style": { "width": "100%", "height": "100%" },
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide12/carousel_hobby.jpg",
+                      "alt": "Motosierra hobby",
+                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                      "variant": "floating",
+                      "popupKey": "hobby",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-multiuso",
+                    "style": { "width": "100%", "height": "100%" },
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide12/carousel_multiuso.jpg",
+                      "alt": "Motosierra multiuso",
+                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                      "variant": "floating",
+                      "popupKey": "multiuso",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-profesionales",
+                    "style": { "width": "100%", "height": "100%" },
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide12/carousel_profesionales.jpg",
+                      "alt": "Motosierras profesionales",
+                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                      "variant": "floating",
+                      "popupKey": "profesionales",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-cuidado",
+                    "style": { "width": "100%", "height": "100%" },
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide12/carousel_cuidadoArboles.jpg",
+                      "alt": "Motosierras para el cuidado de árboles",
+                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                      "variant": "floating",
+                      "popupKey": "cuidadoArboles",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "productos-recomendados",
+                    "style": { "width": "100%", "height": "100%", "padding": "0 15px" },
+                    "content": {
+                      "type": "image",
+                      "src": "/images/{locale}/slide12/carousel_productosRecomendados.jpg",
+                      "alt": "Productos recomendados",
+                      "style": { "width": "100%", "height": "auto", "objectFit": "contain" },
+                      "width": 200,
+                      "height": 150
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "popups": {
+          "cuidadoArboles": [
+            {"src": "/images/{locale}/slide12/cuidadoArboles/carrusel-motosierra-arboles_00.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-t435/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/t435/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra T435", "id": "18800", "price": "", "category": "Motosierra", "variant": "Cuidado Árboles"}},
+            {"src": "/images/{locale}/slide12/cuidadoArboles/carrusel-motosierra-arboles_01.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-t525/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/t525/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra T525", "id": "18801", "price": "", "category": "Motosierra", "variant": "Cuidado Árboles"}},
+            {"src": "/images/{locale}/slide12/cuidadoArboles/carrusel-motosierra-arboles_02.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierra-t540xp-mark-iii/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-gasolina/540xp-mark-iii/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra T540XP Mark III", "id": "18802", "price": "", "category": "Motosierra", "variant": "Cuidado Árboles"}},
+            {"src": "/images/{locale}/slide12/cuidadoArboles/carrusel-motosierra-arboles_03.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/podadora-525p4s/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/podadora-vara-525p4s/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Podadora 525P4S", "id": "18803", "price": "", "category": "Motosierra", "variant": "Cuidado Árboles"}},
+            {"src": "/images/{locale}/slide12/cuidadoArboles/carrusel-motosierra-arboles_04.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/podadora-525pt5s/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/525pt5s/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Podadora 525PT5S", "id": "18804", "price": "", "category": "Motosierra", "variant": "Cuidado Árboles"}}
+          ],
+          "electricasYBateria": [
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_00.png", "href": {"es": "https://tiendahusqvarna.es/aspire/podadora-de-mano-aspire-p5-p4a/", "pt": "https://lojahusqvarna.pt/aspire/podador-mao-aspire-p5-p4a/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Aspire P5", "id": "18810", "price": "", "category": "Motosierra", "variant": "Eléctrica"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_01.png", "href": {"es": "https://tiendahusqvarna.es/aspire/podadora-telescopica-aspire-pe5-p4a/", "pt": "https://www.husqvarna.com/pt/podadoras-com-vara/aspire-pe5-p4a-sem-bateria-e-carregador/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Aspire PE5", "id": "18811", "price": "", "category": "Motosierra", "variant": "Eléctrica"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_02.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-electricas/motosierra-420el/", "pt": "https://lojahusqvarna.pt/motosserras/serra-eletrica-420el/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 420EL", "id": "18812", "price": "", "category": "Motosierra", "variant": "Eléctrica"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_03.png", "href": {"es": "https://tiendahusqvarna.es/motosierras-bateria/motosierra-225i/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-bateria/225i/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 225i", "id": "18813", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_04.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/kit-motosierra-225i/", "pt": "https://www.husqvarna.com/pt/motosserras/motosserra-225i/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Kit Motosierra 225i", "id": "18814", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_05.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/motosierra-240i/", "pt": "https://www.husqvarna.com/pt/motosserras/240i-com-bateria-e-carregador/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 240i", "id": "18815", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_06.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/kit-motosierra-240i/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-bateria/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Kit Motosierra 240i", "id": "18816", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_07.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierra-435i/", "pt": "https://lojahusqvarna.pt/motosserras/bateria/435i/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 435i", "id": "18817", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_08.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/motosierra-535i-xp/", "pt": "https://lojahusqvarna.pt/motosserras/motosserra-bateria-535i-xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 535i XP", "id": "18818", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_09.png", "href": {"es": "https://tiendahusqvarna.es/motosierra-540ixp/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-bateria/540i-xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 540i XP", "id": "18819", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_10.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/motosierra-t535i-xp/", "pt": "https://lojahusqvarna.pt/motosserras/motosserra-poda-bateria-t535i-xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra T535i XP", "id": "18820", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_11.png", "href": {"es": "https://tiendahusqvarna.es/motosierra-t540ixp/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-bateria/t540i-xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra T540i XP", "id": "18821", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_12.png", "href": {"es": "https://tiendahusqvarna.es/equipamiento-arboricultura/motosierra-542ixp/", "pt": "https://lojahusqvarna.pt/motoserras/motosserras-bateria/542i-xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 542i XP", "id": "18822", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_13.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/motosierra-t542ixp/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-bateria/t542i-xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra T542i XP", "id": "18823", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_14.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/podadora-120itk4-p/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-bateria/podadora-a-bateria-120itk4-p/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Podadora 120iTK4-P", "id": "18824", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_15.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/kit-podadora-120itk4p/", "pt": "https://www.husqvarna.com/pt/corta-sebes/120itk4-h-com-bateria-e-carregador/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Kit Podadora 120iTK4-P", "id": "18825", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_16.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/kit-120itk4-ph/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-bateria/podadora-a-bateria-120itk4-ph/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Kit 120iTK4-PH", "id": "18826", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_17.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/podadora-530ip4/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-bateria/podadora-vara-bateria-530ip4/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Podadora 530iP4", "id": "18827", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_18.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/podadora-530ipx/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-bateria/podadora-vara-bateria-530ipx/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Podadora 530iPX", "id": "18828", "price": "", "category": "Motosierra", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide12/electricaBateria/carrusel-motosierra-elbat_19.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-bateria/podadora-530ipt5/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-bateria/podadora-vara-bateria-530ipt5/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Podadora 530iPT5", "id": "18829", "price": "", "category": "Motosierra", "variant": "Batería"}}
+          ],
+          "hobby": [
+            {"src": "/images/{locale}/slide12/hobby/carrusel-motosierra_hobby_00.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-120-mark-ii/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/120markii/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 120 Mark II", "id": "18830", "price": "", "category": "Motosierra", "variant": "Hobby"}},
+            {"src": "/images/{locale}/slide12/hobby/carrusel-motosierra_hobby_01.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-130/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/130/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 130", "id": "18831", "price": "", "category": "Motosierra", "variant": "Hobby"}},
+            {"src": "/images/{locale}/slide12/hobby/carrusel-motosierra_hobby_02.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-135-mark-ii/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/135markii/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 135 Mark II", "id": "18832", "price": "", "category": "Motosierra", "variant": "Hobby"}}
+          ],
+          "multiuso": [
+            {"src": "/images/{locale}/slide12/multiuso/carrusel-motosierra_multiuso_00.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-440ii/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/motosserra-440/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 440 II", "id": "18840", "price": "", "category": "Motosierra", "variant": "Multiuso"}},
+            {"src": "/images/{locale}/slide12/multiuso/carrusel-motosierra_multiuso_01.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-450-ii/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/motosserra-450/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 450 II", "id": "18841", "price": "", "category": "Motosierra", "variant": "Multiuso"}},
+            {"src": "/images/{locale}/slide12/multiuso/carrusel-motosierra_multiuso_02.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-455-rancher/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/motosserra-455-e-series-rancher/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 455 Rancher", "id": "18842", "price": "", "category": "Motosierra", "variant": "Multiuso"}},
+            {"src": "/images/{locale}/slide12/multiuso/carrusel-motosierra_multiuso_03.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-460-rancher/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/460rancher/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 460 Rancher", "id": "18843", "price": "", "category": "Motosierra", "variant": "Multiuso"}}
+          ],
+          "profesionales": [
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_00.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-545-mark-ii/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/545mark2/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 545 Mark II", "id": "18850", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_01.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-365/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/365-x-torq/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 365", "id": "18851", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_02.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-565/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/565/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 565", "id": "18852", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_03.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierra-t540xp-mark-iii/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-gasolina/540xp-mark-iii/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra T540XP Mark III", "id": "18853", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_04.png", "href": {"es": "https://www.husqvarna.com/es/motosierras/550xp-mark-ii/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/550xp-mark2/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 550XP Mark II", "id": "18854", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_05.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-560xp-autotune/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/560-xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 560XP AutoTune", "id": "18855", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_06.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierras Profesionales", "id": "18856", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_07.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-372xp/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/motosserra-372-xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 372XP", "id": "18857", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_08.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-572xp/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-gasolina/motosserra-572xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 572XP", "id": "18858", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_09.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-585/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-gasolina/585/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 585", "id": "18859", "price": "", "category": "Motosierra", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_10.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-592-xp/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-gasolina/592xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 592XP", "id": "18860", "price": "", "category": "Motosierra", "variant": "Profesional"}}
+          ]
+        }
       }
     ]
   }
