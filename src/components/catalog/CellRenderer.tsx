@@ -82,7 +82,7 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
     if (content.hoverScale) {
       return (
         <div 
-          className={cn('catalog-image-container', content.containerClassName)}
+          className={cn('catalog-image-container', content.containerClassName, 'h-full')}
           data-component="CellRenderer"
           data-content-type="image"
           data-hover-scale="true"
@@ -108,7 +108,7 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
     
     return (
       <div 
-        className={cn('catalog-image-container relative', content.containerClassName)}
+        className={cn('catalog-image-container relative h-full', content.containerClassName)}
         data-component="CellRenderer"
         data-content-type="image"
       >
