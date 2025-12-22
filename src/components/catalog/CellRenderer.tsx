@@ -80,9 +80,12 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
     const objectFitClass = hasFullDimensions ? '' : 'object-cover';
     
     if (content.hoverScale) {
+      // For hover scale images, use CSS sizing instead of HTML width/height attributes
+      // This allows the image to grow and fill the container
+      // Note: overflow-hidden should be on the parent cell, not here, to allow scale animation
       return (
         <div 
-          className={cn('catalog-image-container', content.containerClassName, 'h-full')}
+          className={cn('catalog-image-container', content.containerClassName)}
           data-component="CellRenderer"
           data-content-type="image"
           data-hover-scale="true"
@@ -91,12 +94,14 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
             loading="lazy"
             src={src}
             alt={content.alt}
-            className={cn('catalog-image catalog-image--hover h-full w-full', objectFitClass, content.className)}
-            width={content.width}
-            height={content.height}
+            className={cn('catalog-image catalog-image--hover', objectFitClass, content.className)}
             whileHover={{ scale: 1.1 }}
             onClick={() => handleClick(content.onClick)}
-            style={{ cursor: content.onClick ? 'pointer' : 'default' }}
+            style={{ 
+              cursor: content.onClick ? 'pointer' : 'default',
+              width: '100%',
+              height: '100%',
+            }}
           />
         </div>
       );
@@ -108,7 +113,7 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
     
     return (
       <div 
-        className={cn('catalog-image-container relative h-full', content.containerClassName)}
+        className={cn('catalog-image-container relative', content.containerClassName)}
         data-component="CellRenderer"
         data-content-type="image"
       >
@@ -207,7 +212,7 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
   if (isNestedGridContent(content)) {
     return (
       <div
-        className="catalog-nested-grid"
+        className="catalog-nested-grid h-full w-full"
         data-component="CellRenderer"
         data-content-type="nestedGrid"
       >
@@ -225,7 +230,7 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
   if (isNestedFlexContent(content)) {
     return (
       <div
-        className="catalog-nested-flex"
+        className="catalog-nested-flex h-full w-full"
         data-component="CellRenderer"
         data-content-type="nestedFlex"
       >

@@ -54,6 +54,7 @@ export const GridRenderer: React.FC<GridRendererProps> = ({
           gridTemplateColumns,
           gridTemplateRows,
           gap: layout.gap,
+          ...layout.style,
         }}
       >
         {layout.cells.map((cell) => (
@@ -89,7 +90,7 @@ export const GridRenderer: React.FC<GridRendererProps> = ({
         data-component="GridRenderer"
         data-layout-type="flex"
         data-direction={layout.direction}
-        style={{ gap: layout.gap }}
+        style={{ gap: layout.gap, ...layout.style }}
       >
         {layout.children.map((child, index) => {
           if (isLayoutWrapper(child)) {
@@ -141,8 +142,11 @@ const GridCellRenderer: React.FC<GridCellRendererProps> = ({
   onOpenPopup,
   onClickMenu,
 }) => {
-  const style: React.CSSProperties = {};
+  const style: React.CSSProperties = {
+    ...cell.style, // Apply custom inline styles first
+  };
   
+  // Then apply grid-specific properties
   if (cell.gridColumn) style.gridColumn = cell.gridColumn;
   if (cell.gridRow) style.gridRow = cell.gridRow;
   if (cell.maxWidth) style.maxWidth = cell.maxWidth;

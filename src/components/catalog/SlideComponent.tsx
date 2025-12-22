@@ -62,6 +62,7 @@ export const SlideComponent: React.FC<SlideComponentProps> = ({
       <CarouselSlide
         key={config.id}
         className={cn('catalog-slide', `catalog-slide--${config.id}`, config.padding, config.className)}
+        style={config.style}
       >
         <div 
           className="catalog-slide__content h-full w-full"

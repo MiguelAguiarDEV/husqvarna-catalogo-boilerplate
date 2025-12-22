@@ -16,6 +16,8 @@ export interface SlideConfig {
   id: string;
   /** Additional CSS classes for the slide container */
   className?: string;
+  /** Inline CSS styles (for values not in Tailwind) */
+  style?: React.CSSProperties;
   /** Background color or Tailwind class */
   backgroundColor?: string;
   /** Padding classes */
@@ -50,6 +52,8 @@ export interface GridLayout {
   className?: string;
   /** Grid cells */
   cells: GridCell[];
+  /** Inline CSS styles */
+  style?: React.CSSProperties;
 }
 
 export interface FlexLayout {
@@ -66,6 +70,8 @@ export interface FlexLayout {
   justify?: 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly';
   /** Child elements */
   children: (GridCell | LayoutWrapper)[];
+  /** Inline CSS styles */
+  style?: React.CSSProperties;
 }
 
 /** Wrapper for nested layouts in flex children */
@@ -92,6 +98,8 @@ export interface GridCell {
   height?: string;
   /** Additional CSS classes */
   className?: string;
+  /** Inline CSS styles */
+  style?: React.CSSProperties;
   /** Cell content */
   content: CellContent;
 }

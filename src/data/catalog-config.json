@@ -20,6 +20,7 @@
                 "type": "image",
                 "src": "/images/{locale}/slide1.jpg",
                 "alt": "Catálogo Husqvarna 2026",
+                "containerClassName": "h-full",
                 "className": "h-full w-full object-contain",
                 "width": 684,
                 "height": 967
@@ -30,12 +31,12 @@
       },
       {
         "id": "slide2",
-        "padding": "p-[30px]",
         "mobileViewports": 2,
+        "style": { "padding": "10px" },
         "layout": {
           "type": "flex",
           "direction": "row",
-          "gap": "16px",
+          "gap": "8px",
           "className": "h-full w-full gap-4",
           "children": [
             {
@@ -49,11 +50,12 @@
                 "children": [
                   {
                     "id": "main-image-container",
-                    "className": "flex-1 w-full max-w-[763px]",
+                    "className": "w-full max-w-[763px]",
                     "content": {
                       "type": "image",
                       "src": "/images/{locale}/slide2/background.jpg",
                       "alt": "slide2 background",
+                      "containerClassName": "w-fit",
                       "className": "h-full w-full object-cover",
                       "width": 763,
                       "height": 644
@@ -61,14 +63,14 @@
                   },
                   {
                     "id": "bottom-row",
-                    "className": "flex flex-row gap-16 w-full",
+                    "className": "flex flex-row w-full bg-red-500",
                     "content": {
                       "type": "nestedFlex",
                       "layout": {
                         "type": "flex",
                         "direction": "row",
-                        "gap": "64px",
-                        "className": "flex flex-row gap-16 w-full",
+                        "gap": "30px",
+                        "className": "flex flex-row w-full",
                         "children": [
                           {
                             "id": "text-section",
@@ -92,7 +94,7 @@
                                   },
                                   {
                                     "id": "description",
-                                    "className": "mt-[10px]",
+                                    "className": "",
                                     "content": {
                                       "type": "image",
                                       "src": "/images/{locale}/slide2/description.png",
@@ -127,12 +129,13 @@
             },
             {
               "id": "right-grid",
-              "className": "h-full w-[30%]",
+              "className": "w-[30%]",
               "layout": {
                 "type": "grid",
                 "columns": 2,
-                "gap": "16px",
-                "className": "h-full w-full grid grid-cols-2 gap-4",
+                "rows": 3,
+                "gap": "8px",
+                "className": "w-full grid grid-cols-2 grid-rows-3 auto-rows-auto",
                 "cells": [
                   {
                     "id": "card-energia",
@@ -229,73 +232,72 @@
       },
       {
         "id": "slide3",
-        "padding": "p-[30px]",
+        "style": { "padding": "10px" },
         "className": "!bg-[#EEEEED]",
         "mobileViewports": 2,
         "layout": {
           "type": "grid",
           "columns": 2,
-          "gap": "60px",
-          "className": "SlideContainer grid grid-cols-2 gap-[60px]",
+          "gap": "30px",
+          "className": "SlideContainer grid grid-cols-2 h-full",
           "cells": [
             {
               "id": "left-column",
+              "className": "h-full",
               "content": {
                 "type": "nestedFlex",
                 "layout": {
                   "type": "flex",
                   "direction": "column",
-                  "gap": "15px",
-                  "className": "flex flex-col gap-[15px]",
+                  "gap": "8px",
+                  "className": "flex flex-col h-full",
                   "children": [
                     {
                       "id": "corte-tala",
-                      "className": "h-full max-h-[384px] w-full max-w-[535px]",
+                      "className": "flex-1 w-full",
                       "content": {
                         "type": "image",
                         "src": "/images/{locale}/slide3/corteYTala.png",
                         "alt": "Corte y Tala",
-                        "className": "cursor-pointer object-fill",
-                        "width": 535,
-                        "height": 384,
+                        "containerClassName": "h-full w-full",
+                        "className": "cursor-pointer object-cover h-full w-full",
                         "hoverScale": true,
                         "onClick": {"action": "menu", "target": "Corte y tala"}
                       }
                     },
                     {
                       "id": "bottom-row",
+                      "className": "flex-1",
                       "content": {
                         "type": "nestedFlex",
                         "layout": {
                           "type": "flex",
                           "direction": "row",
-                          "gap": "15px",
-                          "className": "flex flex-row gap-[15px]",
+                          "gap": "8px",
+                          "className": "flex flex-row h-full",
                           "children": [
                             {
                               "id": "cesped",
-                              "className": "h-full max-h-[383px] w-full max-w-[260px]",
+                              "className": "flex-1 h-full",
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide3/ciudadoCesped.png",
                                 "alt": "Cuidado del césped",
-                                "className": "cursor-pointer object-fill",
-                                "width": 260,
-                                "height": 383,
+                                "containerClassName": "h-full w-full",
+                                "className": "cursor-pointer object-cover h-full w-full",
                                 "hoverScale": true,
                                 "onClick": {"action": "menu", "target": "Cuidado del césped"}
                               }
                             },
                             {
                               "id": "limpieza",
-                              "className": "h-full max-h-[383px] w-full max-w-[260px]",
+                              "className": "flex-1 h-full",
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide3/limpieza.png",
                                 "alt": "Limpieza",
-                                "className": "cursor-pointer object-fill",
-                                "width": 260,
-                                "height": 383,
+                                "containerClassName": "h-full w-full",
+                                "className": "cursor-pointer object-cover h-full w-full",
                                 "hoverScale": true,
                                 "onClick": {"action": "menu", "target": "Limpieza"}
                               }
@@ -315,8 +317,8 @@
                 "layout": {
                   "type": "flex",
                   "direction": "row",
-                  "gap": "15px",
-                  "className": "flex flex-row gap-[15px]",
+                  "gap": "8px",
+                  "className": "flex flex-row",
                   "children": [
                     {
                       "id": "right-left-half",
@@ -325,8 +327,8 @@
                         "layout": {
                           "type": "flex",
                           "direction": "column",
-                          "gap": "15px",
-                          "className": "flex flex-col gap-[15px]",
+                          "gap": "8px",
+                          "className": "flex flex-col gap-[8px]",
                           "children": [
                             {
                               "id": "recorte",
@@ -365,8 +367,8 @@
                         "layout": {
                           "type": "flex",
                           "direction": "column",
-                          "gap": "15px",
-                          "className": "flex flex-col gap-[15px]",
+                          "gap": "8px",
+                          "className": "flex flex-col gap-[8px]",
                           "children": [
                             {
                               "id": "naturaleza",
@@ -420,12 +422,12 @@
       },
       {
         "id": "slide4",
-        "padding": "pl-[20px] pt-[20px]",
+        "style": { "paddingLeft": "20px", "paddingTop": "20px" },
         "mobileViewports": 2,
         "layout": {
           "type": "flex",
           "direction": "row",
-          "className": "flex flex-row",
+          "className": "flex flex-row h-full",
           "children": [
             {
               "id": "left-content",
@@ -435,7 +437,8 @@
                 "layout": {
                   "type": "flex",
                   "direction": "column",
-                  "className": "flex flex-col justify-center w-1/2",
+                  "style": { "paddingRight": "20px" },
+                  "className": "flex flex-col justify-center",
                   "children": [
                     {
                       "id": "futuro-mejor",
@@ -443,7 +446,9 @@
                         "type": "image",
                         "src": "/images/{locale}/slide4/futuroMejor.jpg",
                         "alt": "Por un futuro mejor",
-                        "className": "object-fill w-[95%]"
+                        "className": "object-fill",
+                        "width": 535,
+                        "height": 647
                       }
                     },
                     {
@@ -453,7 +458,9 @@
                         "type": "image",
                         "src": "/images/{locale}/slide4/footerIcons.jpg",
                         "alt": "Iconos del pie de página",
-                        "className": "object-fill mt-[3%] w-[95%]"
+                        "className": "object-fill",
+                        "width": 535,
+                        "height": 105
                       }
                     }
                   ]
@@ -468,34 +475,40 @@
                 "layout": {
                   "type": "flex",
                   "direction": "column",
-                  "className": "flex flex-col w-1/2",
+                  "className": "flex flex-col",
                   "children": [
                     {
                       "id": "first-row",
-                      "className": "flex flex-row mb-1 justify-between max-w-[100%]",
+                      "className": "flex flex-row mb-1 justify-between",
                       "content": {
                         "type": "nestedFlex",
                         "layout": {
                           "type": "flex",
                           "direction": "row",
-                          "className": "flex flex-row mb-1 justify-between max-w-[100%]",
+                          "className": "flex flex-row justify-between",
                           "children": [
                             {
                               "id": "bateria-flexible",
+                              "className": "w-1/2",
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide4/bateriaFlexible.png",
                                 "alt": "Batería flexible",
-                                "className": "object-fill w-[50%]"
+                                "className": "object-fill",
+                                "width": 293,
+                                "height": 136
                               }
                             },
                             {
                               "id": "maquina-bateria",
+                              "className": "w-1/2",
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide4/maquinaConBateria.png",
                                 "alt": "Máquina con batería",
-                                "className": "object-fill w-[50%]"
+                                "className": "object-fill",
+                                "width": 293,
+                                "height": 184
                               }
                             }
                           ]
@@ -504,22 +517,26 @@
                     },
                     {
                       "id": "second-row",
-                      "className": "pl-1 h-full max-h-[430px] w-full max-w-[100%] pr-[30px] mt-[3.5%]",
+                      "className": "",
                       "content": {
                         "type": "image",
                         "src": "/images/{locale}/slide4/gustoPorMaquinasBateria.png",
                         "alt": "Gusto por máquinas con batería",
-                        "className": "object-fill w-[95%]"
+                        "className": "object-fill",
+                        "width": 564,
+                        "height": 430
                       }
                     },
                     {
                       "id": "third-row",
-                      "className": "pl-6 h-full max-h-[179px] w-full max-w-[100%] pr-[30px] mt-[3.5%]",
+                      "className": "",
                       "content": {
                         "type": "image",
                         "src": "/images/{locale}/slide4/vidaUtil.png",
                         "alt": "Prolonga la vida útil",
-                        "className": "object-fill w-[95%]"
+                        "className": "object-fill",
+                        "width": 553,
+                        "height": 179
                       }
                     }
                   ]

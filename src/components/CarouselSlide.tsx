@@ -1,14 +1,16 @@
-import { ReactNode } from 'react'
+import { ReactNode, CSSProperties } from 'react'
 import { MainContainer } from './MainContainer'
 import { cn } from '@/utils/misc'
 
 export const CarouselSlide = ({
   children,
   className,
+  style,
 }: {
   children: ReactNode
   key?: string
   className?: string
+  style?: CSSProperties
 }) => {
   return (
     <div>
@@ -19,6 +21,7 @@ export const CarouselSlide = ({
           `,
           className,
         )}
+        style={style}
       >
         {children}
       </MainContainer>
