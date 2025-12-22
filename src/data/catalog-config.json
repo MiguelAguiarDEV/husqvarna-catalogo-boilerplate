@@ -1111,59 +1111,19 @@
                 "type": "nestedFlex",
                 "layout": {
                   "type": "flex",
-                  "style": { "paddingRight": "10px" },
                   "direction": "column",
                   "className": "flex flex-col",
                   "children": [
                     {
                       "id": "mid-background",
-                      "className": "max-w-[535px] max-h-[511px]",
+                      "className": "max-w-[655px] max-h-[811px]",
                       "content": {
                         "type": "image",
-                        "src": "/images/{locale}/slide9/midBackgroundLeft.png",
+                        "src": "/images/{locale}/slide9/midBackgroundLeft.jpg",
                         "alt": "background left",
                         "className": "w-full h-full object-cover",
                         "width": 535,
                         "height": 511
-                      }
-                    },
-                    {
-                      "id": "bottom-images",
-                      "className": "mt-[5%]",
-                      "content": {
-                        "type": "nestedFlex",
-                        "layout": {
-                          "type": "flex",
-                          "direction": "row",
-                          "gap": "8px",
-                          "className": "flex flex-row",
-                          "children": [
-                            {
-                              "id": "corte-alto",
-                              "className": "w-[260px] h-[241px]",
-                              "content": {
-                                "type": "image",
-                                "src": "/images/{locale}/slide9/corteAltoNivel.jpg",
-                                "alt": "Corte de alto nivel",
-                                "className": "object-cover",
-                                "width": 260,
-                                "height": 241
-                              }
-                            },
-                            {
-                              "id": "resistentes",
-                              "className": "w-[260px] h-[241px]",
-                              "content": {
-                                "type": "image",
-                                "src": "/images/{locale}/slide9/resistentesFiables.jpg",
-                                "alt": "Resistentes y fiables",
-                                "className": "object-cover",
-                                "width": 260,
-                                "height": 241
-                              }
-                            }
-                          ]
-                        }
                       }
                     }
                   ]
@@ -1328,62 +1288,62 @@
         "layout": {
           "type": "flex",
           "direction": "row",
-          "gap": "20px",
-          "className": "h-full w-full gap-4",
+          "gap": "15px",
+          "style": { "display": "flex", "flexDirection": "row", "height": "100%", "width": "100%", "gap": "15px" },
           "children": [
             {
               "id": "left-section",
-              "className": "h-full flex flex-col gap-5",
+              "style": { "flex": "1", "height": "100%", "display": "flex", "flexDirection": "column", "gap": "20px"  },
               "layout": {
                 "type": "flex",
                 "direction": "column",
-                "gap": "20px",
-                "className": "h-full w-full flex flex-col gap-5",
+                "style": { "display": "flex", "marginTop": "30px","flexDirection": "column", "height": "auto", "maxHeight": "100%", "width": "100%", "gap": "30px" },
                 "children": [
                   {
                     "id": "main-image-container",
-                    "className": "w-full flex-1 min-h-0 max-w-[763px]",
+                    "style": { "flex": "1", "minHeight": "0", "maxHeight": "calc(100% - 230px)", "width": "100%", "overflow": "hidden" },
                     "content": {
                       "type": "image",
                       "src": "/images/{locale}/slide10/midBackground.png",
                       "alt": "slide10 background",
-                      "className": "w-full h-full object-cover",
+                      "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
                       "width": 763,
-                      "height": 644
+                      "height": 344
                     }
                   },
                   {
                     "id": "bottom-row",
-                    "className": "flex flex-row w-full",
+                    "style": { "flex": "2", "display": "flex", "flexDirection": "row", "width": "100%", "gap": "8px", "minHeight": "300px" },
                     "content": {
                       "type": "nestedFlex",
                       "layout": {
                         "type": "flex",
                         "direction": "row",
-                        "gap": "0px",
+                        "gap": "8px",
+                        "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "8px" },
                         "children": [
                            {
                             "id": "tractor-adecuado",
-                            "className": "w-1/2 max-w-[302px]",
+                            "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
                             "content": {
                               "type": "image",
                               "src": "/images/{locale}/slide10/tractorAdecuado.jpg",
                               "alt": "Tractor Adecuado",
-                              "className": "w-full h-[120px] max-w-[302px] object-cover",
-                              "width": 302,
-                              "height": 118
+                              "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                              "width": 372,
+                              "height": 218
                             }
                           },
                           {
                             "id": "adapta-temporada",
-                            "className": "w-1/2 max-w-[302px]",
+                            "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
                             "content": {
                               "type": "image",
                               "src": "/images/{locale}/slide10/adaptaSegunTemporada.png",
                               "alt": "Adapta según temporada",
-                              "className": "w-full h-[120px] max-w-[302px] object-cover",
-                              "width": 302,
-                              "height": 118
+                              "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                              "width": 382,
+                              "height": 218
                             }
                           }
                         ]
@@ -1395,35 +1355,22 @@
             },
             {
               "id": "right-grid",
-              "className": "w-[30%]",
+              "style": { "flex": "1", "height": "100%", "display": "grid", "gridTemplateColumns": "1fr", "gridTemplateRows": "1fr 1fr 1fr", "gap": "8px" },
               "layout": {
                 "type": "grid",
                 "columns": 1,
                 "rows": 3,
-                "gap": "8px",
-                "className": "w-full grid grid-cols-2 grid-rows-3 auto-rows-auto",
+                "gap": "20px",
+                "style": { "display": "flex", "flexDirection": "column", "width": "100%"},
                 "cells": [
                   {
-                    "id": "card-energia",
-                    "content": {
-                      "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide2/energia.jpg",
-                      "alt": "Energía hidráulica",
-                      "imgClassName": "h-full w-full object-cover",
-                      "variant": "floating",
-                      "buttonText": "",
-                      "popupKey": "popUp1",
-                      "buttonContainerClassName": "!bottom-[10%]",
-                      "buttonClassName": "hidden"
-                    }
-                  },
-                  {
                     "id": "card-maquinaria",
+                    "style": { "overflow": "visible", "width": "100%", "height": "100%" },
                     "content": {
                       "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide2/maquinaria.jpg",
+                      "imageSrc": "/images/{locale}/slide10/carousel_sinRecogedor.jpg",
                       "alt": "Maquinaria innovadora",
-                      "imgClassName": "h-full w-full object-cover",
+                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
                       "variant": "floating",
                       "popupKey": "popUp2",
                       "buttonContainerClassName": "!bottom-[10%]",
@@ -1432,12 +1379,13 @@
                   },
                   {
                     "id": "card-reputacion",
+                    "style": { "overflow": "visible", "width": "100%", "height": "100%" },
                     "content": {
                       "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide2/reputacion.jpg",
+                      "imageSrc": "/images/{locale}/slide10/carousel_conRecogedor.jpg",
                       "alt": "Reputación internacional",
-                      "imgClassName": "h-full w-full object-cover",
-                      "variant": "floating",
+                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                      "variant": "floating",  
                       "popupKey": "popUp3",
                       "buttonContainerClassName": "!bottom-[10%]",
                       "buttonClassName": "hidden"
@@ -1445,39 +1393,14 @@
                   },
                   {
                     "id": "card-innovacion",
+                    "style": { "overflow": "visible", "width": "100%", "height": "100%" },
                     "content": {
                       "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide2/innovacion.jpg",
+                      "imageSrc": "/images/{locale}/slide10/accesorios.jpg",
                       "alt": "Innovación en motosierras",
-                      "imgClassName": "h-full w-full object-cover",
+                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
                       "variant": "floating",
                       "popupKey": "popUp4",
-                      "buttonContainerClassName": "!bottom-[10%]",
-                      "buttonClassName": "hidden"
-                    }
-                  },
-                  {
-                    "id": "card-pioneros",
-                    "content": {
-                      "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide2/pioneros.jpg",
-                      "alt": "Pioneros en el mercado",
-                      "imgClassName": "h-full w-full object-cover",
-                      "variant": "floating",
-                      "popupKey": "popUp5",
-                      "buttonContainerClassName": "!bottom-[10%]",
-                      "buttonClassName": "hidden"
-                    }
-                  },
-                  {
-                    "id": "card-soluciones",
-                    "content": {
-                      "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide2/soluciones.jpg",
-                      "alt": "Soluciones sostenibles",
-                      "imgClassName": "h-full w-full object-cover",
-                      "variant": "floating",
-                      "popupKey": "popUp6",
                       "buttonContainerClassName": "!bottom-[10%]",
                       "buttonClassName": "hidden"
                     }
