@@ -1422,6 +1422,132 @@
             {"src": "/images/{locale}/slide10/tractorConRecogedor/carrusel-tracto-rec_04.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/tractores/tractor-tc242t/", "pt": "https://lojahusqvarna.pt/corta-relva/tratores/tc242t/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna TC 242T", "id": "18643", "price": "899", "category": "Tractor", "variant": "Con Recogedor"}}
           ]
         }
+      },
+      {
+        "id": "slide11",
+        "mobileViewports": 2,
+        "layout": {
+          "type": "flex",
+          "direction": "column",
+          "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%", "gap": "10px", "position": "relative" },
+          "children": [
+            {
+              "id": "upper-content",
+              "style": { "padding": "30px", "paddingBottom": "0", "width": "100%", "maxHeight": "65%", "position": "relative" },
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "column",
+                  "style": { "position": "relative", "width": "100%", "height": "100%" },
+                  "children": [
+                    {
+                      "id": "background-main",
+                      "style": { "width": "100%", "height": "100%" },
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide11/background.png",
+                        "alt": "background riders",
+                        "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                        "width": 1130,
+                        "height": 511
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "lower-content",
+              "style": { "paddingLeft": "30px", "display": "flex", "flexDirection": "row", "maxWidth": "75%", "gap": "50px", "height": "100%" },
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "row",
+                  "style": { "display": "flex", "flexDirection": "row", "gap": "8px", "alignItems": "baseline" },
+                  "children": [
+                    {
+                      "id": "card-bateria",
+                      "style": { "maxWidth": "253px", "maxHeight": "241px" },
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide11/carousel_ridersBateria.jpg",
+                        "alt": "Riders batería",
+                        "imgStyle": { "maxHeight": "241px", "maxWidth": "253px" },
+                        "variant": "floating",
+                        "popupKey": "bateria",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "card-residencial",
+                      "style": { "maxWidth": "253px", "maxHeight": "241px" },
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide11/carousel_ridersResidencial.jpg",
+                        "alt": "Riders residencial",
+                        "imgStyle": { "maxHeight": "241px", "maxWidth": "253px" },
+                        "variant": "floating",
+                        "popupKey": "residencial",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "card-profesional",
+                      "style": { "maxWidth": "253px", "maxHeight": "241px" },
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide11/carousel_ridersProfesional.jpg",
+                        "alt": "Riders profesional",
+                        "imgStyle": { "maxHeight": "241px", "maxWidth": "253px" },
+                        "variant": "floating",
+                        "popupKey": "profesional",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "rider-overlay",
+              "style": { "position": "absolute", "bottom": { "mobile": "50%", "desktop": "0" }, "right": "0", "width": "28%", "height": "auto" },
+              "content": {
+                "type": "image",
+                "src": "/images/{locale}/slide11/riderImage.png",
+                "alt": "Rider image",
+                "style": { "width": "100%", "height": "auto", "objectFit": "cover" },
+                "width": 313,
+                "height": 280
+              }
+            }
+          ]
+        },
+        "popups": {
+          "bateria": [
+            {"src": "/images/{locale}/slide11/bateria/carrusel-rider-bateria_00.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/riders/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/r200ix/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Rider R200iX", "id": "18700", "price": "", "category": "Rider", "variant": "Batería"}}
+          ],
+          "residencial": [
+            {"src": "/images/{locale}/slide11/residencial/carrusel-rider-residencial_00_v3.png", "href": {"es": "https://tiendahusqvarna.es/riders/rider-r-214tc-confort/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/r214tc-comfort-edition/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Rider R214TC Comfort", "id": "18701", "price": "", "category": "Rider", "variant": "Residencial"}},
+            {"src": "/images/{locale}/slide11/residencial/carrusel-rider-residencial_01_v2.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/riders/rider-r216t-awd/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/r216t-awd/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Rider R216T AWD", "id": "18702", "price": "", "category": "Rider", "variant": "Residencial"}},
+            {"src": "/images/{locale}/slide11/residencial/carrusel-rider-residencial_02_v2.png", "href": {"es": "https://www.husqvarna.com/es/riders/r316tx-awd/", "pt": "https://www.husqvarna.com/pt/tratores-corta-relva-frontais/r316tx-awd/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Rider R316TX AWD", "id": "18703", "price": "", "category": "Rider", "variant": "Residencial"}},
+            {"src": "/images/{locale}/slide11/residencial/carrusel-rider-residencial_03_v2-1.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/riders/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Riders Residencial", "id": "18704", "price": "", "category": "Rider", "variant": "Residencial"}},
+            {"src": "/images/{locale}/slide11/residencial/carrusel-rider-residencial_03_v2.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/riders/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/r316tx-awd/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Riders Residencial", "id": "18705", "price": "", "category": "Rider", "variant": "Residencial"}}
+          ],
+          "profesional": [
+            {"src": "/images/{locale}/slide11/profesional/carrusel-rider-pro_00_v2.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/riders/rider-r-420tsx-awd/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/r420tsx-awd/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Rider R420TSX AWD", "id": "18710", "price": "", "category": "Rider", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide11/profesional/carrusel-rider-pro_01_v2.png", "href": {"es": "https://www.husqvarna.com/es/riders/p524x/", "pt": "https://www.husqvarna.com/pt/tratores-corta-relva-frontais/p524x/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Rider P524X", "id": "18711", "price": "", "category": "Rider", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide11/profesional/carrusel-rider-pro_02_v2.png", "href": {"es": "https://www.husqvarna.com/es/riders/p524xr-efi/", "pt": "https://www.husqvarna.com/pt/tratores-corta-relva-frontais/p524xr-efi/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Rider P524XR EFI", "id": "18712", "price": "", "category": "Rider", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide11/profesional/carrusel-rider-pro_03_v2.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/riders/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Riders Profesional", "id": "18713", "price": "", "category": "Rider", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide11/profesional/carrusel-rider-pro_04_v2.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/riders/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Riders Profesional", "id": "18714", "price": "", "category": "Rider", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide11/profesional/carrusel-rider-pro_05_v2.png", "href": {"es": "https://www.husqvarna.com/es/riders/p525dx-cabina/", "pt": "https://www.husqvarna.com/pt/tratores-corta-relva-frontais/p525dx-com-cabine/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Rider P525DX Cabina", "id": "18715", "price": "", "category": "Rider", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide11/profesional/carrusel-rider-pro_06_v2.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/riders/", "pt": "https://lojahusqvarna.pt/corta-relva/riders/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Riders Profesional", "id": "18716", "price": "", "category": "Rider", "variant": "Profesional"}}
+          ]
+        }
       }
     ]
   }
