@@ -594,20 +594,8 @@
                               "className": "max-w-[260px] max-h-[241px]",
                               "content": {
                                 "type": "image",
-                                "src": "/images/{locale}/slide5/pruebaSistema.jpg",
-                                "alt": "Prueba el sistema de energía variable",
-                                "className": "object-fill",
-                                "width": 260,
-                                "height": 241
-                              }
-                            },
-                            {
-                              "id": "que-autonomia",
-                              "className": "max-w-[260px] max-h-[241px]",
-                              "content": {
-                                "type": "image",
-                                "src": "/images/{locale}/slide5/queAutonomia.jpg",
-                                "alt": "¿Qué autonomía tiene la batería?",
+                                "src": "/images/{locale}/slide5/unaBateria.png",
+                                "alt": "Una batería",
                                 "className": "object-fill",
                                 "width": 260,
                                 "height": 241
@@ -633,7 +621,7 @@
                               "className": "max-w-[168px] max-h-[241px]",
                               "content": {
                                 "type": "productCard",
-                                "imageSrc": "/images/{locale}/slide5/carousel_herramientasJardin.png",
+                                "imageSrc": "/images/{locale}/slide5/carousel_herramientasJardin.jpg",
                                 "alt": "Herramientas de jardín",
                                 "imgClassName": "!max-h-[241px] !max-w-[168px]",
                                 "variant": "floating",
@@ -880,9 +868,10 @@
                     {
                       "id": "cuidado-palma",
                       "className": "w-[47%]",
+                      "style": {"width": "560px", "height": "243px", "marginTop": "-3%"},
                       "content": {
                         "type": "image",
-                        "src": "/images/{locale}/slide7/cuidadoEnPalma.jpg",
+                        "src": "/images/{locale}/slide7/cuidadoEnPalma.png",
                         "alt": "Cuidado del césped en la palma de tu mano",
                         "className": "h-full w-full object-cover",
                         "width": 560,
@@ -1314,12 +1303,12 @@
         "layout": {
           "type": "flex",
           "direction": "row",
-          "gap": "8px",
+          "gap": "20px",
           "className": "h-full w-full gap-4",
           "children": [
             {
               "id": "left-section",
-              "className": "h-full w-[67.52%] flex flex-col gap-5",
+              "className": "h-full flex flex-col gap-5",
               "layout": {
                 "type": "flex",
                 "direction": "column",
@@ -1328,49 +1317,47 @@
                 "children": [
                   {
                     "id": "main-image-container",
-                    "className": "w-full max-w-[763px]",
+                    "className": "w-full flex-1 min-h-0 max-w-[763px]",
                     "content": {
                       "type": "image",
                       "src": "/images/{locale}/slide10/midBackground.png",
                       "alt": "slide10 background",
-                      "containerClassName": "w-fit",
-                      "className": "h-full w-full object-cover",
+                      "className": "w-full h-full object-cover",
                       "width": 763,
                       "height": 644
                     }
                   },
                   {
                     "id": "bottom-row",
-                    "className": "flex flex-row w-full bg-red-500",
+                    "className": "flex flex-row w-full",
                     "content": {
                       "type": "nestedFlex",
                       "layout": {
                         "type": "flex",
                         "direction": "row",
-                        "gap": "30px",
-                        "className": "flex flex-row w-full",
+                        "gap": "0px",
                         "children": [
                            {
-                            "id": "logo",
-                            "className": "flex items-center",
+                            "id": "tractor-adecuado",
+                            "className": "w-1/2 max-w-[302px]",
                             "content": {
                               "type": "image",
                               "src": "/images/{locale}/slide10/tractorAdecuado.jpg",
-                              "alt": "Husqvarna Logo",
-                              "className": "w-auto h-auto",
-                              "width": 102,
+                              "alt": "Tractor Adecuado",
+                              "className": "w-full h-[120px] max-w-[302px] object-cover",
+                              "width": 302,
                               "height": 118
                             }
                           },
                           {
-                            "id": "logo",
-                            "className": "flex items-center",
+                            "id": "adapta-temporada",
+                            "className": "w-1/2 max-w-[302px]",
                             "content": {
                               "type": "image",
-                              "src": "/images/{locale}/slide10/adaptaSegunTemporada.jpg",
-                              "alt": "Husqvarna Logo",
-                              "className": "w-auto h-auto",
-                              "width": 102,
+                              "src": "/images/{locale}/slide10/adaptaSegunTemporada.png",
+                              "alt": "Adapta según temporada",
+                              "className": "w-full h-[120px] max-w-[302px] object-cover",
+                              "width": 302,
                               "height": 118
                             }
                           }
@@ -1386,7 +1373,7 @@
               "className": "w-[30%]",
               "layout": {
                 "type": "grid",
-                "columns": 2,
+                "columns": 1,
                 "rows": 3,
                 "gap": "8px",
                 "className": "w-full grid grid-cols-2 grid-rows-3 auto-rows-auto",
