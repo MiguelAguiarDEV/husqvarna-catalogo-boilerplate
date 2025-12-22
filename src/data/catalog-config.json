@@ -1306,6 +1306,183 @@
             {"src": "/images/{locale}/slide9/escarificadores/carrusel-escarificador_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Escarificador", "id": "", "price": "", "category": "Escarificador", "variant": "Modal"}}
           ]
         }
+      },
+       {
+        "id": "slide10",
+        "mobileViewports": 2,
+        "style": { "padding": "10px" },
+        "layout": {
+          "type": "flex",
+          "direction": "row",
+          "gap": "8px",
+          "className": "h-full w-full gap-4",
+          "children": [
+            {
+              "id": "left-section",
+              "className": "h-full w-[67.52%] flex flex-col gap-5",
+              "layout": {
+                "type": "flex",
+                "direction": "column",
+                "gap": "20px",
+                "className": "h-full w-full flex flex-col gap-5",
+                "children": [
+                  {
+                    "id": "main-image-container",
+                    "className": "w-full max-w-[763px]",
+                    "content": {
+                      "type": "image",
+                      "src": "/images/{locale}/slide10/midBackground.png",
+                      "alt": "slide10 background",
+                      "containerClassName": "w-fit",
+                      "className": "h-full w-full object-cover",
+                      "width": 763,
+                      "height": 644
+                    }
+                  },
+                  {
+                    "id": "bottom-row",
+                    "className": "flex flex-row w-full bg-red-500",
+                    "content": {
+                      "type": "nestedFlex",
+                      "layout": {
+                        "type": "flex",
+                        "direction": "row",
+                        "gap": "30px",
+                        "className": "flex flex-row w-full",
+                        "children": [
+                           {
+                            "id": "logo",
+                            "className": "flex items-center",
+                            "content": {
+                              "type": "image",
+                              "src": "/images/{locale}/slide10/tractorAdecuado.jpg",
+                              "alt": "Husqvarna Logo",
+                              "className": "w-auto h-auto",
+                              "width": 102,
+                              "height": 118
+                            }
+                          },
+                          {
+                            "id": "logo",
+                            "className": "flex items-center",
+                            "content": {
+                              "type": "image",
+                              "src": "/images/{locale}/slide10/adaptaSegunTemporada.jpg",
+                              "alt": "Husqvarna Logo",
+                              "className": "w-auto h-auto",
+                              "width": 102,
+                              "height": 118
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "right-grid",
+              "className": "w-[30%]",
+              "layout": {
+                "type": "grid",
+                "columns": 2,
+                "rows": 3,
+                "gap": "8px",
+                "className": "w-full grid grid-cols-2 grid-rows-3 auto-rows-auto",
+                "cells": [
+                  {
+                    "id": "card-energia",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/energia.jpg",
+                      "alt": "Energía hidráulica",
+                      "imgClassName": "h-full w-full object-cover",
+                      "variant": "floating",
+                      "buttonText": "",
+                      "popupKey": "popUp1",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-maquinaria",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/maquinaria.jpg",
+                      "alt": "Maquinaria innovadora",
+                      "imgClassName": "h-full w-full object-cover",
+                      "variant": "floating",
+                      "popupKey": "popUp2",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-reputacion",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/reputacion.jpg",
+                      "alt": "Reputación internacional",
+                      "imgClassName": "h-full w-full object-cover",
+                      "variant": "floating",
+                      "popupKey": "popUp3",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-innovacion",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/innovacion.jpg",
+                      "alt": "Innovación en motosierras",
+                      "imgClassName": "h-full w-full object-cover",
+                      "variant": "floating",
+                      "popupKey": "popUp4",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-pioneros",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/pioneros.jpg",
+                      "alt": "Pioneros en el mercado",
+                      "imgClassName": "h-full w-full object-cover",
+                      "variant": "floating",
+                      "popupKey": "popUp5",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  },
+                  {
+                    "id": "card-soluciones",
+                    "content": {
+                      "type": "productCard",
+                      "imageSrc": "/images/{locale}/slide2/soluciones.jpg",
+                      "alt": "Soluciones sostenibles",
+                      "imgClassName": "h-full w-full object-cover",
+                      "variant": "floating",
+                      "popupKey": "popUp6",
+                      "buttonContainerClassName": "!bottom-[10%]",
+                      "buttonClassName": "hidden"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "popups": {
+          "popUp1": [{"src": "/images/{locale}/slide2/popup/popup_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp2": [{"src": "/images/{locale}/slide2/popup/popup_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp3": [{"src": "/images/{locale}/slide2/popup/popup_02.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp4": [{"src": "/images/{locale}/slide2/popup/popup_03.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp5": [{"src": "/images/{locale}/slide2/popup/popup_04.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
+          "popUp6": [{"src": "/images/{locale}/slide2/popup/popup_05.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}]
+        }
       }
     ]
   }
