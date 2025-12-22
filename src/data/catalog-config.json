@@ -591,12 +591,16 @@
                           "children": [
                             {
                               "id": "prueba-sistema",
-                              "className": "max-w-[260px] max-h-[241px]",
+                              "className": "",
+                              "style": {
+                                  "width": "600px",
+                                  "height": "241px"
+                                },
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide5/unaBateria.png",
                                 "alt": "Una batería",
-                                "className": "object-fill",
+                                "className": "object-fill w-full h-full",
                                 "width": 260,
                                 "height": 241
                               }
