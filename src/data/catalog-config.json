@@ -1364,45 +1364,43 @@
                 "style": { "display": "flex", "flexDirection": "column", "width": "100%"},
                 "cells": [
                   {
-                    "id": "card-maquinaria",
+                    "id": "card-sinRecogedor",
                     "style": { "overflow": "visible", "width": "100%", "height": "100%" },
                     "content": {
                       "type": "productCard",
                       "imageSrc": "/images/{locale}/slide10/carousel_sinRecogedor.jpg",
-                      "alt": "Maquinaria innovadora",
+                      "alt": "Tractores sin recogedor",
                       "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
                       "variant": "floating",
-                      "popupKey": "popUp2",
+                      "popupKey": "tractoresSinRecogedor",
                       "buttonContainerClassName": "!bottom-[10%]",
                       "buttonClassName": "hidden"
                     }
                   },
                   {
-                    "id": "card-reputacion",
+                    "id": "card-conRecogedor",
                     "style": { "overflow": "visible", "width": "100%", "height": "100%" },
                     "content": {
                       "type": "productCard",
                       "imageSrc": "/images/{locale}/slide10/carousel_conRecogedor.jpg",
-                      "alt": "Reputación internacional",
+                      "alt": "Tractores con recogedor",
                       "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
                       "variant": "floating",  
-                      "popupKey": "popUp3",
+                      "popupKey": "tractoresConRecogedor",
                       "buttonContainerClassName": "!bottom-[10%]",
                       "buttonClassName": "hidden"
                     }
                   },
                   {
-                    "id": "card-innovacion",
+                    "id": "card-accesorios",
                     "style": { "overflow": "visible", "width": "100%", "height": "100%" },
                     "content": {
-                      "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide10/accesorios.jpg",
-                      "alt": "Innovación en motosierras",
-                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
-                      "variant": "floating",
-                      "popupKey": "popUp4",
-                      "buttonContainerClassName": "!bottom-[10%]",
-                      "buttonClassName": "hidden"
+                      "type": "image",
+                      "src": "/images/{locale}/slide10/accesorios.jpg",
+                      "alt": "Accesorios",
+                      "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                      "width": 252,
+                      "height": 241
                     }
                   }
                 ]
@@ -1411,12 +1409,18 @@
           ]
         },
         "popups": {
-          "popUp1": [{"src": "/images/{locale}/slide2/popup/popup_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
-          "popUp2": [{"src": "/images/{locale}/slide2/popup/popup_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
-          "popUp3": [{"src": "/images/{locale}/slide2/popup/popup_02.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
-          "popUp4": [{"src": "/images/{locale}/slide2/popup/popup_03.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
-          "popUp5": [{"src": "/images/{locale}/slide2/popup/popup_04.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}],
-          "popUp6": [{"src": "/images/{locale}/slide2/popup/popup_05.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "PopUp", "variant": "PopUp"}}]
+          "tractoresSinRecogedor": [
+            {"src": "/images/{locale}/slide10/tractorSinRecogedor/carrusel-tractor-sin-rec_00_v2.png", "href": {"es": "https://tiendahusqvarna.es/tractores-cortacesped/tractor-t-s112/", "pt": "https://lojahusqvarna.pt/corta-relva/tratores/ts112/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna TS 112", "id": "18636", "price": "399", "category": "Tractor", "variant": "Sin Recogedor"}},
+            {"src": "/images/{locale}/slide10/tractorSinRecogedor/carrusel-tractor-sin-rec_01.png", "href": {"es": "https://tiendahusqvarna.es/tractores-cortacesped/tractor-t-s114/", "pt": "https://lojahusqvarna.pt/corta-relva/tratores/ts114/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna TS 114", "id": "18637", "price": "499", "category": "Tractor", "variant": "Sin Recogedor"}},
+            {"src": "/images/{locale}/slide10/tractorSinRecogedor/carrusel-tractor-sin-rec_02.png", "href": {"es": "https://tiendahusqvarna.es/tractores-cortacesped/", "pt": "https://lojahusqvarna.pt/corta-relva/tratores/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna Tractores", "id": "18638", "price": "", "category": "Tractor", "variant": "Sin Recogedor"}}
+          ],
+          "tractoresConRecogedor": [
+            {"src": "/images/{locale}/slide10/tractorConRecogedor/carrusel-tracto-rec_00.png", "href": {"es": "https://tiendahusqvarna.es/tractores-cortacesped/tractor-tc-112/", "pt": "https://lojahusqvarna.pt/corta-relva/tratores/tc112/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna TC 112", "id": "18639", "price": "599", "category": "Tractor", "variant": "Con Recogedor"}},
+            {"src": "/images/{locale}/slide10/tractorConRecogedor/carrusel-tracto-rec_01.png", "href": {"es": "https://tiendahusqvarna.es/tractores-cortacesped/tractor-tc-114/", "pt": "https://lojahusqvarna.pt/corta-relva/tratores/tc114/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna TC 114", "id": "18640", "price": "699", "category": "Tractor", "variant": "Con Recogedor"}},
+            {"src": "/images/{locale}/slide10/tractorConRecogedor/carrusel-tracto-rec_02.png", "href": {"es": "https://tiendahusqvarna.es/tractores-cortacesped/", "pt": "https://lojahusqvarna.pt/corta-relva/tratores/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna Tractores", "id": "18641", "price": "", "category": "Tractor", "variant": "Con Recogedor"}},
+            {"src": "/images/{locale}/slide10/tractorConRecogedor/carrusel-tracto-rec_03.png", "href": {"es": "https://tiendahusqvarna.es/tractores-cortacesped/", "pt": "https://lojahusqvarna.pt/corta-relva/tratores/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna Tractores", "id": "18642", "price": "", "category": "Tractor", "variant": "Con Recogedor"}},
+            {"src": "/images/{locale}/slide10/tractorConRecogedor/carrusel-tracto-rec_04.png", "href": {"es": "https://tiendahusqvarna.es/cortacesped/tractores/tractor-tc242t/", "pt": "https://lojahusqvarna.pt/corta-relva/tratores/tc242t/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Husqvarna TC 242T", "id": "18643", "price": "899", "category": "Tractor", "variant": "Con Recogedor"}}
+          ]
         }
       }
     ]
