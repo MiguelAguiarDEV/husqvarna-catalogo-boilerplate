@@ -41,7 +41,7 @@
           "children": [
             {
               "id": "left-section",
-              "className": "h-full w-[67.52%] flex flex-col gap-5",
+              "className": "h-full w-[67.52%]  flex flex-col gap-5",
               "layout": {
                 "type": "flex",
                 "direction": "column",
@@ -232,72 +232,79 @@
       },
       {
         "id": "slide3",
-        "style": { "padding": "10px" },
+        "style": { "padding": "10px"},
         "className": "!bg-[#EEEEED]",
         "mobileViewports": 2,
         "layout": {
-          "type": "grid",
-          "columns": 2,
-          "gap": "30px",
-          "className": "SlideContainer grid grid-cols-2 h-full",
-          "cells": [
+          "type": "flex",
+          "direction": "row",
+          "gap": "15px",
+          "className": "flex flex-row h-full w-full",
+          "children": [
             {
               "id": "left-column",
-              "className": "h-full",
+              "className": "flex-1 h-full",
+              "style": { "overflow": "visible", "maxWidth": { "mobile": "170px", "desktop": "490px" } },
               "content": {
                 "type": "nestedFlex",
                 "layout": {
                   "type": "flex",
                   "direction": "column",
-                  "gap": "8px",
-                  "className": "flex flex-col h-full",
+                  "gap": "0px",
+                  "style": { "overflow": "visible" },
+                  "className": "flex flex-col h-full w-full",
                   "children": [
                     {
                       "id": "corte-tala",
-                      "className": "flex-1 w-full",
+                      "className": "flex-[1.2] w-full min-h-0",
+                      "style": { "overflow": "visible" },
                       "content": {
                         "type": "image",
                         "src": "/images/{locale}/slide3/corteYTala.png",
                         "alt": "Corte y Tala",
                         "containerClassName": "h-full w-full",
-                        "className": "cursor-pointer object-cover h-full w-full",
+                        "className": "cursor-pointer object-fill h-full w-full",
                         "hoverScale": true,
                         "onClick": {"action": "menu", "target": "Corte y tala"}
                       }
                     },
                     {
-                      "id": "bottom-row",
-                      "className": "flex-1",
+                      "id": "bottom-row-left",
+                      "className": "flex-[0.8] min-h-0",
+                      "style": { "overflow": "visible" },
                       "content": {
                         "type": "nestedFlex",
                         "layout": {
                           "type": "flex",
                           "direction": "row",
                           "gap": "8px",
-                          "className": "flex flex-row h-full",
+                          "style": { "overflow": "visible" },
+                          "className": "flex flex-row h-full w-full",
                           "children": [
                             {
                               "id": "cesped",
-                              "className": "flex-1 h-full",
+                              "className": "flex-1 min-w-0",
+                              "style": { "overflow": "visible" },
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide3/ciudadoCesped.png",
                                 "alt": "Cuidado del césped",
                                 "containerClassName": "h-full w-full",
-                                "className": "cursor-pointer object-cover h-full w-full",
+                                "className": "cursor-pointer object-fill h-full w-full",
                                 "hoverScale": true,
                                 "onClick": {"action": "menu", "target": "Cuidado del césped"}
                               }
                             },
                             {
-                              "id": "limpieza",
-                              "className": "flex-1 h-full",
+                              "id": "limpieza", 
+                              "className": "flex-1 min-w-0",
+                              "style": { "overflow": "visible" },
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide3/limpieza.png",
                                 "alt": "Limpieza",
                                 "containerClassName": "h-full w-full",
-                                "className": "cursor-pointer object-cover h-full w-full",
+                                "className": "cursor-pointer object-fill h-full w-full",
                                 "hoverScale": true,
                                 "onClick": {"action": "menu", "target": "Limpieza"}
                               }
@@ -312,46 +319,54 @@
             },
             {
               "id": "right-column",
+              "className": "flex-1 h-full",
+              "style": { "overflow": "visible" },
               "content": {
                 "type": "nestedFlex",
                 "layout": {
                   "type": "flex",
                   "direction": "row",
                   "gap": "8px",
-                  "className": "flex flex-row",
+                  "style": { "overflow": "visible" },
+                  "className": "flex flex-row h-full w-full",
                   "children": [
                     {
                       "id": "right-left-half",
+                      "className": "flex-1 min-w-0",
+                      "style": { "overflow": "visible" },
                       "content": {
                         "type": "nestedFlex",
                         "layout": {
                           "type": "flex",
                           "direction": "column",
                           "gap": "8px",
-                          "className": "flex flex-col gap-[8px]",
+                          "style": { "overflow": "visible" },
+                          "className": "flex flex-col h-full w-full",
                           "children": [
                             {
                               "id": "recorte",
+                              "className": "flex-[1.4] min-h-0",
+                              "style": { "overflow": "visible" },
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide3/recorteDesbroce.png",
                                 "alt": "Recorte y desbroce",
-                                "className": "cursor-pointer object-fill",
-                                "width": 260,
-                                "height": 463,
+                                "containerClassName": "h-full w-full",
+                                "className": "cursor-pointer object-fill h-full w-full",
                                 "hoverScale": true,
                                 "onClick": {"action": "menu", "target": "Recorte y desbroce"}
                               }
                             },
                             {
                               "id": "suelo",
+                              "className": "flex-1 min-h-0",
+                              "style": { "overflow": "visible" },
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide3/cuidadoSuelo.png",
                                 "alt": "Cuidado del suelo",
-                                "className": "cursor-pointer object-fill",
-                                "width": 260,
-                                "height": 304,
+                                "containerClassName": "h-full w-full",
+                                "className": "cursor-pointer object-fill h-full w-full",
                                 "hoverScale": true,
                                 "onClick": {"action": "menu", "target": "Cuidado del suelo"}
                               }
@@ -362,49 +377,55 @@
                     },
                     {
                       "id": "right-right-half",
+                      "className": "flex-1 min-w-0",
+                      "style": { "overflow": "visible" },
                       "content": {
                         "type": "nestedFlex",
                         "layout": {
                           "type": "flex",
                           "direction": "column",
                           "gap": "8px",
-                          "className": "flex flex-col gap-[8px]",
+                          "style": { "overflow": "visible" },
+                          "className": "flex flex-col h-full w-full",
                           "children": [
                             {
                               "id": "naturaleza",
+                              "className": "flex-[1.6] min-h-0",
+                              "style": { "overflow": "visible" },
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide3/respetoNaturaleza.png",
                                 "alt": "Respeto por la naturaleza",
-                                "className": "cursor-pointer object-fill",
-                                "width": 260,
-                                "height": 384,
+                                "containerClassName": "h-full w-full",
+                                "className": "cursor-pointer object-fill h-full w-full",
                                 "hoverScale": true,
                                 "onClick": {"action": "menu", "target": "Respeto a la naturaleza"}
                               }
                             },
                             {
                               "id": "generadores",
+                              "className": "flex-1 min-h-0",
+                              "style": { "overflow": "visible" },
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide3/generadores.png",
                                 "alt": "Generadores y motobombas",
-                                "className": "cursor-pointer object-fill",
-                                "width": 260,
-                                "height": 169,
+                                "containerClassName": "h-full w-full",
+                                "className": "cursor-pointer object-fill h-full w-full",
                                 "hoverScale": true,
                                 "onClick": {"action": "menu", "target": "Generadores y motobombas"}
                               }
                             },
                             {
                               "id": "ropa",
+                              "className": "flex-1 min-h-0",
+                              "style": { "overflow": "visible" },
                               "content": {
                                 "type": "image",
                                 "src": "/images/{locale}/slide3/ropa.png",
                                 "alt": "Ropa y accesorios",
-                                "className": "cursor-pointer object-fill",
-                                "width": 260,
-                                "height": 199,
+                                "containerClassName": "h-full w-full",
+                                "className": "cursor-pointer object-fill h-full w-full",
                                 "hoverScale": true,
                                 "onClick": {"action": "menu", "target": "Ropa y accesorios"}
                               }

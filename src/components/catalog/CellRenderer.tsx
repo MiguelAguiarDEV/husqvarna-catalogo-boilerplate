@@ -82,10 +82,10 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
     if (content.hoverScale) {
       // For hover scale images, use CSS sizing instead of HTML width/height attributes
       // This allows the image to grow and fill the container
-      // Note: overflow-hidden should be on the parent cell, not here, to allow scale animation
+      // Container has overflow-visible to allow the scaled image to show beyond bounds
       return (
         <div 
-          className={cn('catalog-image-container', content.containerClassName)}
+          className={cn('catalog-image-container relative overflow-visible', content.containerClassName)}
           data-component="CellRenderer"
           data-content-type="image"
           data-hover-scale="true"
@@ -94,8 +94,8 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
             loading="lazy"
             src={src}
             alt={content.alt}
-            className={cn('catalog-image catalog-image--hover', objectFitClass, content.className)}
-            whileHover={{ scale: 1.1 }}
+            className={cn('catalog-image catalog-image--hover relative', objectFitClass, content.className)}
+            whileHover={{ scale: 1.05, zIndex: 10 }}
             onClick={() => handleClick(content.onClick)}
             style={{ 
               cursor: content.onClick ? 'pointer' : 'default',

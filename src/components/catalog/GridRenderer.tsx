@@ -3,6 +3,7 @@
  * 
  * Recursively renders grid and flex layouts from configuration.
  * Handles nested layouts, cell positioning, and styling.
+ * Supports responsive styles with { mobile: "...", desktop: "..." } format.
  */
 
 import { cn } from '@/utils/misc';
@@ -16,6 +17,7 @@ import {
 } from '@/types/slide.types';
 import { CellRenderer } from './CellRenderer';
 import { MenuLabels } from '../Header';
+import { useBreakpoint, resolveResponsiveValue, Breakpoint } from '@/hooks/useBreakpoint';
 
 interface GridRendererProps {
   layout: GridLayout | FlexLayout;
@@ -142,17 +144,51 @@ const GridCellRenderer: React.FC<GridCellRendererProps> = ({
   onOpenPopup,
   onClickMenu,
 }) => {
-  const style: React.CSSProperties = {
-    ...cell.style, // Apply custom inline styles first
+  const breakpoint = useBreakpoint();
+  
+  // Helper to resolve responsive values in style object
+  const resolveResponsiveStyles = (
+    styleObj: Record<string, unknown> | undefined,
+    bp: Breakpoint
+  ): React.CSSProperties => {
+    if (!styleObj) return {};
+    
+    const resolved: Record<string, unknown> = {};
+    for (const [key, value] of Object.entries(styleObj)) {
+      const resolvedValue = resolveResponsiveValue(value as string | number | { mobile?: string | number; desktop?: string | number }, bp);
+      if (resolvedValue !== undefined) {
+        resolved[key] = resolvedValue;
+      }
+    }
+    return resolved as React.CSSProperties;
   };
   
-  // Then apply grid-specific properties
+  // Resolve responsive styles
+  const resolvedStyle = resolveResponsiveStyles(cell.style as Record<string, unknown>, breakpoint);
+  
+  const style: React.CSSProperties = {
+    ...resolvedStyle,
+  };
+  
+  // Then apply grid-specific properties (also support responsive values)
   if (cell.gridColumn) style.gridColumn = cell.gridColumn;
   if (cell.gridRow) style.gridRow = cell.gridRow;
-  if (cell.maxWidth) style.maxWidth = cell.maxWidth;
-  if (cell.maxHeight) style.maxHeight = cell.maxHeight;
-  if (cell.width) style.width = cell.width;
-  if (cell.height) style.height = cell.height;
+  if (cell.maxWidth) {
+    const resolved = resolveResponsiveValue(cell.maxWidth as string | number | { mobile?: string | number; desktop?: string | number }, breakpoint);
+    if (resolved !== undefined) style.maxWidth = resolved;
+  }
+  if (cell.maxHeight) {
+    const resolved = resolveResponsiveValue(cell.maxHeight as string | number | { mobile?: string | number; desktop?: string | number }, breakpoint);
+    if (resolved !== undefined) style.maxHeight = resolved;
+  }
+  if (cell.width) {
+    const resolved = resolveResponsiveValue(cell.width as string | number | { mobile?: string | number; desktop?: string | number }, breakpoint);
+    if (resolved !== undefined) style.width = resolved;
+  }
+  if (cell.height) {
+    const resolved = resolveResponsiveValue(cell.height as string | number | { mobile?: string | number; desktop?: string | number }, breakpoint);
+    if (resolved !== undefined) style.height = resolved;
+  }
 
   return (
     <div 
