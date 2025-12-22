@@ -139,7 +139,7 @@ export const CellRenderer: React.FC<CellRendererProps> = ({
     
     return (
       <div 
-        className="catalog-product-card"
+        className="catalog-product-card hover:z-10 relative"
         data-component="CellRenderer"
         data-content-type="productCard"
         data-popup-key={content.popupKey}

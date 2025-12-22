@@ -545,6 +545,767 @@
             }
           ]
         }
+      },
+      {
+        "id": "slide5",
+        "style": { "padding": "10px 10px 50px 10px" },
+        "mobileViewports": 2,
+        "layout": {
+          "type": "flex",
+          "direction": "column",
+          "gap": "10px",
+          "className": "flex flex-col h-full",
+          "children": [
+            {
+              "id": "upper-content",
+              "className": "w-full",
+              "content": {
+                "type": "image",
+                "src": "/images/{locale}/slide5/midBackground.png",
+                "alt": "background nueva gama aspire",
+                "className": "h-full w-full object-cover",
+                "width": 1130,
+                "height": 511
+              }
+            },
+            {
+              "id": "bottom-content",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "row",
+                  "gap": "10px",
+                  "className": "flex flex-row",
+                  "children": [
+                    {
+                      "id": "left-section",
+                      "className": "w-1/2",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "8px",
+                          "className": "flex flex-row items-center justify-center",
+                          "children": [
+                            {
+                              "id": "prueba-sistema",
+                              "className": "max-w-[260px] max-h-[241px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide5/pruebaSistema.jpg",
+                                "alt": "Prueba el sistema de energía variable",
+                                "className": "object-fill",
+                                "width": 260,
+                                "height": 241
+                              }
+                            },
+                            {
+                              "id": "que-autonomia",
+                              "className": "max-w-[260px] max-h-[241px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide5/queAutonomia.jpg",
+                                "alt": "¿Qué autonomía tiene la batería?",
+                                "className": "object-fill",
+                                "width": 260,
+                                "height": 241
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "right-section",
+                      "className": "w-1/2",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "2px",
+                          "className": "flex flex-row items-center justify-center",
+                          "children": [
+                            {
+                              "id": "card-herramientas",
+                              "className": "max-w-[168px] max-h-[241px]",
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide5/carousel_herramientasJardin.png",
+                                "alt": "Herramientas de jardín",
+                                "imgClassName": "!max-h-[241px] !max-w-[168px]",
+                                "variant": "floating",
+                                "popupKey": "herramientasJardin",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-baterias",
+                              "className": "max-w-[168px] max-h-[241px]",
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide5/carousel_bateriasCargadores.png",
+                                "alt": "Baterías y cargadores",
+                                "imgClassName": "!max-h-[241px] !max-w-[168px]",
+                                "variant": "floating",
+                                "popupKey": "bateriasCargadores",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-almacenamiento",
+                              "className": "max-w-[168px] max-h-[241px]",
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide5/carousel_solucionesAlmacenamiento.png",
+                                "alt": "Soluciones de almacenamiento",
+                                "imgClassName": "!max-h-[241px] !max-w-[168px]",
+                                "variant": "floating",
+                                "popupKey": "solucionesAlmacenamiento",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "popups": {
+          "herramientasJardin": [
+            {"src": "/images/{locale}/slide5/carousel_herramientasJardin/carrusel-herramientajardin_00.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_herramientasJardin/carrusel-herramientajardin_01.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_herramientasJardin/carrusel-herramientajardin_02.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_herramientasJardin/carrusel-herramientajardin_03.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_herramientasJardin/carrusel-herramientajardin_04.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_herramientasJardin/carrusel-herramientajardin_05.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_herramientasJardin/carrusel-herramientajardin_06.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_herramientasJardin/carrusel-herramientajardin_07.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_herramientasJardin/carrusel-herramientajardin_08.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}}
+          ],
+          "bateriasCargadores": [
+            {"src": "/images/{locale}/slide5/carousel_bateriasCargadores/carrusel-bateria_00.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_bateriasCargadores/carrusel-bateria_01.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_bateriasCargadores/carrusel-bateria_02.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_bateriasCargadores/carrusel-bateria_03.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_bateriasCargadores/carrusel-bateria_04.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_bateriasCargadores/carrusel-bateria_05.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}}
+          ],
+          "solucionesAlmacenamiento": [
+            {"src": "/images/{locale}/slide5/carousel_solucionesAlmacenamiento/carrusel-almacenamiento_00_v2.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_solucionesAlmacenamiento/carrusel-almacenamiento_01.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_solucionesAlmacenamiento/carrusel-almacenamiento_02.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_solucionesAlmacenamiento/carrusel-almacenamiento_03.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}},
+            {"src": "/images/{locale}/slide5/carousel_solucionesAlmacenamiento/carrusel-almacenamiento_04_v2.png", "href": "", "imgClassName": "!max-h-[241px] !max-w-[168px]", "productData": {"name": "Husqvarna 120iTK4-P", "id": "18636", "price": "399", "category": "Podadora", "variant": "Podadora"}}
+          ]
+        }
+      },
+      {
+        "id": "slide6",
+        "style": { "padding": "10px 10px 50px 10px" },
+        "mobileViewports": 2,
+        "layout": {
+          "type": "flex",
+          "direction": "column",
+          "gap": "10px",
+          "className": "flex flex-col h-full",
+          "children": [
+            {
+              "id": "upper-content",
+              "className": "w-full",
+              "content": {
+                "type": "image",
+                "src": "/images/{locale}/slide6/midBackground.png",
+                "alt": "slide6",
+                "className": "h-full w-full object-cover",
+                "width": 1130,
+                "height": 511
+              }
+            },
+            {
+              "id": "bottom-content",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "row",
+                  "gap": "10px",
+                  "className": "flex flex-row",
+                  "children": [
+                    {
+                      "id": "left-section",
+                      "className": "w-1/2",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "8px",
+                          "className": "flex flex-row items-center justify-center",
+                          "children": [
+                            {
+                              "id": "automower",
+                              "className": "max-w-[253px] max-h-[231px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide6/automower.jpg",
+                                "alt": "Automower robotic mowers",
+                                "className": "cursor-pointer",
+                                "width": 253,
+                                "height": 231,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Automowers"}
+                              }
+                            },
+                            {
+                              "id": "cortacespedes",
+                              "className": "max-w-[253px] max-h-[231px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide6/cortacespedes.jpg",
+                                "alt": "Cortacéspedes",
+                                "className": "cursor-pointer",
+                                "width": 253,
+                                "height": 231,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Cortacéspedes"}
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "right-section",
+                      "className": "w-1/2",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "8px",
+                          "className": "flex flex-row items-center justify-center",
+                          "children": [
+                            {
+                              "id": "tractores",
+                              "className": "max-w-[253px] max-h-[231px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide6/tractores.jpg",
+                                "alt": "Tractores",
+                                "className": "cursor-pointer",
+                                "width": 253,
+                                "height": 231,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Tractores"}
+                              }
+                            },
+                            {
+                              "id": "riders",
+                              "className": "max-w-[253px] max-h-[231px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide6/riders.jpg",
+                                "alt": "Riders",
+                                "className": "cursor-pointer",
+                                "width": 253,
+                                "height": 231,
+                                "hoverScale": true,
+                                "onClick": {"action": "menu", "target": "Riders"}
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "slide7",
+        "style": { "padding": "10px 10px 10px 10px" },
+        "mobileViewports": 2,
+        "layout": {
+          "type": "flex",
+          "direction": "column",
+          "className": "flex flex-col h-full",
+          "children": [
+            {
+              "id": "upper-content",
+              "className": "w-full",
+              "content": {
+                "type": "image",
+                "src": "/images/{locale}/slide7/midBackground.png",
+                "alt": "slide7",
+                "className": "h-full w-full object-cover",
+                "width": 1130,
+                "height": 511
+              }
+            },
+            {
+              "id": "bottom-content",
+              "className": "mt-[2%]",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "row",
+                  "className": "flex flex-row justify-between",
+                  "children": [
+                    {
+                      "id": "limites-virtuales",
+                      "className": "w-[47%]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide7/limitesVirtuales.jpg",
+                        "alt": "Límites virtuales",
+                        "className": "h-full w-full object-cover",
+                        "width": 560,
+                        "height": 243
+                      }
+                    },
+                    {
+                      "id": "cuidado-palma",
+                      "className": "w-[47%]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide7/cuidadoEnPalma.jpg",
+                        "alt": "Cuidado del césped en la palma de tu mano",
+                        "className": "h-full w-full object-cover",
+                        "width": 560,
+                        "height": 243
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "slide8",
+        "style": { "paddingLeft": "10px" },
+        "mobileViewports": 2,
+        "layout": {
+          "type": "flex",
+          "direction": "row",
+          "className": "flex flex-row h-full",
+          "children": [
+            {
+              "id": "left-column",
+              "className": "w-1/2",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "column",
+                  "className": "flex flex-col",
+                  "children": [
+                    {
+                      "id": "como-trabaja",
+                      "className": "w-full mb-[2.7%]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide8/comoTrabaja.png",
+                        "alt": "¿Cómo trabaja?",
+                        "className": "h-full w-full object-cover",
+                        "width": 560,
+                        "height": 400
+                      }
+                    },
+                    {
+                      "id": "bottom-images",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "25px",
+                          "className": "flex flex-row justify-center",
+                          "children": [
+                            {
+                              "id": "disena-jardin",
+                              "className": "max-w-[250px] max-h-[368px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide8/disenaJardin.jpg",
+                                "alt": "Diseña tu jardín zona por zona",
+                                "className": "object-fill",
+                                "width": 250,
+                                "height": 368
+                              }
+                            },
+                            {
+                              "id": "descubre-nera",
+                              "className": "max-w-[250px] max-h-[368px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide8/descubreNera.jpg",
+                                "alt": "Descubre Nera",
+                                "className": "object-fill",
+                                "width": 250,
+                                "height": 368
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "right-column",
+              "className": "w-1/2 pt-[2.7%] px-[2.7%] overflow-visible",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "column",
+                  "gap": "10px",
+                  "className": "flex flex-col items-center overflow-visible",
+                  "children": [
+                    {
+                      "id": "automower-card",
+                      "className": "w-full max-w-[90%]",
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide8/carousel_automower.jpg",
+                        "alt": "Carousel Automower",
+                        "imgClassName": "!max-w-[100%]",
+                        "variant": "floating",
+                        "popupKey": "automower",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "separator1",
+                      "className": "w-full max-w-[90%]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide8/separator.png",
+                        "alt": "Separador",
+                        "className": "w-full h-auto",
+                        "width": 535,
+                        "height": 2
+                      }
+                    },
+                    {
+                      "id": "automowerX-card",
+                      "className": "w-full max-w-[90%]",
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide8/carousel_automowerX.jpg",
+                        "alt": "Carousel Automower X",
+                        "imgClassName": "!max-w-[100%]",
+                        "variant": "floating",
+                        "popupKey": "automowerX",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "separator2",
+                      "className": "w-full max-w-[90%]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide8/separator.png",
+                        "alt": "Separador",
+                        "className": "w-full h-auto",
+                        "width": 535,
+                        "height": 2
+                      }
+                    },
+                    {
+                      "id": "automowerPro-card",
+                      "className": "w-full max-w-[90%]",
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide8/carousel_automowerProfesional.jpg",
+                        "alt": "Carousel Automower Profesional",
+                        "imgClassName": "!max-w-[100%]",
+                        "variant": "floating",
+                        "popupKey": "automowerProfesional",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "popups": {
+          "automower": [
+            {"src": "/images/{locale}/slide8/automower/carrusel-AM_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower", "id": "", "price": "", "category": "Automower", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automower/carrusel-AM_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower", "id": "", "price": "", "category": "Automower", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automower/carrusel-AM_02.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower", "id": "", "price": "", "category": "Automower", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automower/carrusel-AM_03.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower", "id": "", "price": "", "category": "Automower", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automower/carrusel-AM_04.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower", "id": "", "price": "", "category": "Automower", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automower/carrusel-AM_05.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower", "id": "", "price": "", "category": "Automower", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automower/carrusel-AM_06.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower", "id": "", "price": "", "category": "Automower", "variant": "Modal"}}
+          ],
+          "automowerX": [
+            {"src": "/images/{locale}/slide8/automowerX/carrusel-Xline_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower X", "id": "", "price": "", "category": "Automower X", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerX/carrusel-Xline_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower X", "id": "", "price": "", "category": "Automower X", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerX/carrusel-Xline_02.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower X", "id": "", "price": "", "category": "Automower X", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerX/carrusel-Xline_03.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower X", "id": "", "price": "", "category": "Automower X", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerX/carrusel-Xline_04.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower X", "id": "", "price": "", "category": "Automower X", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerX/carrusel-Xline_05.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower X", "id": "", "price": "", "category": "Automower X", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerX/carrusel-Xline_06.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower X", "id": "", "price": "", "category": "Automower X", "variant": "Modal"}}
+          ],
+          "automowerProfesional": [
+            {"src": "/images/{locale}/slide8/automowerPro/carrusel-AM_pro_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower Profesional", "id": "", "price": "", "category": "Automower Pro", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerPro/carrusel-AM_pro_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower Profesional", "id": "", "price": "", "category": "Automower Pro", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerPro/carrusel-AM_pro_02.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower Profesional", "id": "", "price": "", "category": "Automower Pro", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerPro/carrusel-AM_pro_03.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower Profesional", "id": "", "price": "", "category": "Automower Pro", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide8/automowerPro/carrusel-AM_pro_04.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Automower Profesional", "id": "", "price": "", "category": "Automower Pro", "variant": "Modal"}}
+          ]
+        }
+      },
+      {
+        "id": "slide9",
+        "style": { "padding": "10px" },
+        "mobileViewports": 2,
+        "layout": {
+          "type": "flex",
+          "direction": "row",
+          "gap": "12px",
+          "className": "flex flex-row h-full",
+          "children": [
+            {
+              "id": "left-column",
+              "className": "w-1/2",
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "style": { "paddingRight": "10px" },
+                  "direction": "column",
+                  "className": "flex flex-col",
+                  "children": [
+                    {
+                      "id": "mid-background",
+                      "className": "max-w-[535px] max-h-[511px]",
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide9/midBackgroundLeft.png",
+                        "alt": "background left",
+                        "className": "w-full h-full object-cover",
+                        "width": 535,
+                        "height": 511
+                      }
+                    },
+                    {
+                      "id": "bottom-images",
+                      "className": "mt-[5%]",
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "8px",
+                          "className": "flex flex-row",
+                          "children": [
+                            {
+                              "id": "corte-alto",
+                              "className": "w-[260px] h-[241px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide9/corteAltoNivel.jpg",
+                                "alt": "Corte de alto nivel",
+                                "className": "object-cover",
+                                "width": 260,
+                                "height": 241
+                              }
+                            },
+                            {
+                              "id": "resistentes",
+                              "className": "w-[260px] h-[241px]",
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide9/resistentesFiables.jpg",
+                                "alt": "Resistentes y fiables",
+                                "className": "object-cover",
+                                "width": 260,
+                                "height": 241
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "right-column",
+              "className": "w-1/2 overflow-visible",
+              "content": {
+                "type": "nestedGrid",
+                "layout": {
+                  "type": "grid",
+                  "columns": 2,
+                  "rows": 3,
+                  "style": { "paddingTop": "10px" },
+                  "gap": "8px",
+                  "className": "grid grid-cols-2 grid-rows-3 overflow-visible",
+                  "cells": [
+                    {
+                      "id": "electricos-bateria",
+                      "className": "max-w-[253px] max-h-[241px]",
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide9/carousel_electricosYBateria.jpg",
+                        "alt": "Eléctricos y batería",
+                        "imgClassName": "!max-h-[241px] !max-w-[253px]",
+                        "variant": "floating",
+                        "popupKey": "electricosBateria",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "gasolina",
+                      "className": "max-w-[253px] max-h-[241px]",
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide9/carousel_gasolina.jpg",
+                        "alt": "Gasolina",
+                        "imgClassName": "!max-h-[241px] !max-w-[253px]",
+                        "variant": "floating",
+                        "popupKey": "gasolina",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "profesionales",
+                      "className": "max-w-[253px] max-h-[241px]",
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide9/carousel_profesionales.jpg",
+                        "alt": "Profesionales",
+                        "imgClassName": "!max-h-[241px] !max-w-[253px]",
+                        "variant": "floating",
+                        "popupKey": "profesional",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "manuales",
+                      "className": "max-w-[253px] max-h-[241px]",
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide9/carousel_manuales.jpg",
+                        "alt": "Manuales",
+                        "imgClassName": "!max-h-[241px] !max-w-[253px]",
+                        "variant": "floating",
+                        "popupKey": "manual",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "flotante",
+                      "className": "max-w-[253px] max-h-[241px]",
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide9/carousel_flotante.jpg",
+                        "alt": "Flotante",
+                        "imgClassName": "!max-h-[241px] !max-w-[253px]",
+                        "variant": "floating",
+                        "popupKey": "flotante",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "escarificadores",
+                      "className": "max-w-[253px] max-h-[241px]",
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide9/carousel_escarificadores.jpg",
+                        "alt": "Escarificadores",
+                        "imgClassName": "!max-h-[241px] !max-w-[253px]",
+                        "variant": "floating",
+                        "popupKey": "escarificador",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "popups": {
+          "gasolina": [
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_00_v2.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_01_v2.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_02_v2.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_03.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_04.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_05.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_06.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_07.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_08.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_09.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/gasolina/carrusel-cortacesped-gasolina_10.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Gasolina", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}}
+          ],
+          "electricosBateria": [
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_02.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_03.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_04.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_05.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_06.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_07.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_08.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_09.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_10.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_11.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_12.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_13.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/electricosBateria/carrusel-cortacesped_bat-elec_14.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Eléctrico", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}}
+          ],
+          "profesional": [
+            {"src": "/images/{locale}/slide9/profesionales/carrusel-cortacesped-profesional_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Profesional", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/profesionales/carrusel-cortacesped-profesional_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Profesional", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}}
+          ],
+          "manual": [
+            {"src": "/images/{locale}/slide9/manuales/carrusel-cortacesped-manual_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Manual", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/manuales/carrusel-cortacesped-manual_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Manual", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}}
+          ],
+          "flotante": [
+            {"src": "/images/{locale}/slide9/flotante/carrusel-cortacesped-flotante_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortacésped Flotante", "id": "", "price": "", "category": "Cortacésped", "variant": "Modal"}}
+          ],
+          "escarificador": [
+            {"src": "/images/{locale}/slide9/escarificadores/carrusel-escarificador_00.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Escarificador", "id": "", "price": "", "category": "Escarificador", "variant": "Modal"}},
+            {"src": "/images/{locale}/slide9/escarificadores/carrusel-escarificador_01.png", "href": "", "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Escarificador", "id": "", "price": "", "category": "Escarificador", "variant": "Modal"}}
+          ]
+        }
       }
     ]
   }

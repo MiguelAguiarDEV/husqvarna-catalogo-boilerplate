@@ -3106,3 +3106,312 @@ describe("Visual Regression", () => {
 *Document Version: 1.0.0*
 *Last Updated: 2025-12-16*
 *Author: Development Team*
+
+---
+
+## 14. Guía Práctica de Configuración de Slides
+
+> **Actualizado:** 2025-12-22
+> **Estado:** Implementación Activa
+
+Esta sección documenta cómo configurar slides en el sistema JSON actual.
+
+### 14.1 Archivo de Configuración
+
+El archivo principal es:
+```
+src/data/catalog-config.json
+```
+
+### 14.2 Estructura Base de una Slide
+
+```json
+{
+  "id": "slideX",
+  "style": { "padding": "10px" },
+  "className": "!bg-[#EEEEED]",
+  "mobileViewports": 2,
+  "layout": {
+    "type": "flex" | "grid",
+    ...
+  },
+  "popups": { ... }
+}
+```
+
+**Propiedades principales:**
+| Propiedad | Tipo | Descripción |
+|-----------|------|-------------|
+| `id` | string | Identificador único de la slide |
+| `style` | CSSProperties | Estilos inline (sin depender de Tailwind) |
+| `className` | string | Clases CSS/Tailwind adicionales |
+| `mobileViewports` | 2 \| 4 | Cuántas secciones en móvil |
+| `layout` | GridLayout \| FlexLayout | Configuración del layout |
+| `popups` | Record<string, PopupConfig[]> | Configuración de popups |
+
+### 14.3 Layouts
+
+#### 14.3.1 Flex Layout
+
+```json
+{
+  "type": "flex",
+  "direction": "row" | "column",
+  "gap": "8px",
+  "className": "flex flex-row h-full",
+  "style": { "paddingRight": "20px" },
+  "children": [ ... ]
+}
+```
+
+#### 14.3.2 Grid Layout
+
+```json
+{
+  "type": "grid",
+  "columns": 2,
+  "rows": 3,
+  "gap": "8px",
+  "className": "grid grid-cols-2 h-full",
+  "style": { ... },
+  "cells": [ ... ]
+}
+```
+
+### 14.4 Celdas (GridCell)
+
+Cada celda puede contener diferentes tipos de contenido:
+
+```json
+{
+  "id": "cell-id",
+  "className": "flex-1 w-full overflow-hidden",
+  "style": { "marginTop": "3.5%" },
+  "content": {
+    "type": "image" | "productCard" | "nestedFlex" | "nestedGrid",
+    ...
+  }
+}
+```
+
+### 14.5 Tipos de Contenido
+
+#### 14.5.1 Imagen Simple
+
+```json
+{
+  "type": "image",
+  "src": "/images/{locale}/slideX/imagen.jpg",
+  "alt": "Descripción de la imagen",
+  "className": "object-fill",
+  "width": 535,
+  "height": 647
+}
+```
+
+**Propiedades de imagen:**
+- `src`: Ruta de la imagen (usa `{locale}` para localización)
+- `alt`: Texto alternativo
+- `width/height`: Dimensiones (requerido para imágenes estáticas)
+- `className`: Clases CSS adicionales
+- `containerClassName`: Clases para el contenedor de la imagen
+- `hoverScale`: `true` para efecto de escala al hover
+- `onClick`: Acción al hacer clic
+
+#### 14.5.2 Imagen con Hover Scale
+
+```json
+{
+  "type": "image",
+  "src": "/images/{locale}/slide3/corteYTala.png",
+  "alt": "Corte y Tala",
+  "containerClassName": "h-full w-full",
+  "className": "cursor-pointer object-cover h-full w-full",
+  "hoverScale": true,
+  "onClick": {"action": "menu", "target": "Corte y tala"}
+}
+```
+
+**Nota:** Para imágenes con `hoverScale`, añadir `overflow-hidden` en la celda padre si quieres limitar la expansión.
+
+#### 14.5.3 Product Card
+
+```json
+{
+  "type": "productCard",
+  "imageSrc": "/images/{locale}/slide2/energia.jpg",
+  "alt": "Energía hidráulica",
+  "imgClassName": "h-full w-full object-cover",
+  "variant": "floating",
+  "buttonText": "",
+  "popupKey": "popUp1",
+  "buttonContainerClassName": "!bottom-[10%]",
+  "buttonClassName": "hidden"
+}
+```
+
+#### 14.5.4 Nested Flex (Layout Anidado)
+
+```json
+{
+  "type": "nestedFlex",
+  "layout": {
+    "type": "flex",
+    "direction": "column",
+    "gap": "8px",
+    "className": "flex flex-col h-full",
+    "children": [ ... ]
+  }
+}
+```
+
+#### 14.5.5 Nested Grid (Grid Anidado)
+
+```json
+{
+  "type": "nestedGrid",
+  "layout": {
+    "type": "grid",
+    "columns": 2,
+    "rows": 3,
+    "gap": "8px",
+    "className": "grid grid-cols-2 grid-rows-3",
+    "cells": [ ... ]
+  }
+}
+```
+
+### 14.6 Acciones onClick
+
+```json
+"onClick": {"action": "menu", "target": "Corte y tala"}
+"onClick": {"action": "popup", "popupKey": "popUp1"}
+"onClick": {"action": "navigate", "slideIndex": 5}
+```
+
+### 14.7 Configuración de Popups
+
+```json
+"popups": {
+  "popUp1": [
+    {
+      "src": "/images/{locale}/slide2/popup/popup_00.png",
+      "href": "",
+      "imgClassName": "!max-h-[336px] !max-w-[460px]",
+      "productData": {
+        "name": "Husqvarna 120iTK4-P",
+        "id": "18636",
+        "price": "399",
+        "category": "PopUp",
+        "variant": "PopUp"
+      }
+    }
+  ]
+}
+```
+
+### 14.8 Ejemplos Completos
+
+#### Ejemplo: Slide de Portada (Slide 1)
+
+```json
+{
+  "id": "slide1",
+  "mobileViewports": 2,
+  "layout": {
+    "type": "flex",
+    "direction": "column",
+    "className": "h-full w-full",
+    "children": [
+      {
+        "id": "main-image",
+        "className": "h-full w-full",
+        "content": {
+          "type": "image",
+          "src": "/images/{locale}/slide1/husqvarna_cover.jpg",
+          "alt": "Husqvarna Cover 2026",
+          "containerClassName": "h-full w-full",
+          "className": "object-contain h-full w-full"
+        }
+      }
+    ]
+  }
+}
+```
+
+#### Ejemplo: Slide con Grid de Categorías (Slide 3)
+
+```json
+{
+  "id": "slide3",
+  "style": { "padding": "10px" },
+  "className": "!bg-[#EEEEED]",
+  "mobileViewports": 2,
+  "layout": {
+    "type": "grid",
+    "columns": 2,
+    "gap": "30px",
+    "className": "grid grid-cols-2 h-full",
+    "cells": [
+      {
+        "id": "left-column",
+        "className": "h-full",
+        "content": {
+          "type": "nestedFlex",
+          "layout": {
+            "type": "flex",
+            "direction": "column",
+            "gap": "8px",
+            "className": "flex flex-col h-full",
+            "children": [
+              {
+                "id": "image-1",
+                "className": "flex-1 w-full",
+                "content": {
+                  "type": "image",
+                  "src": "/images/{locale}/slide3/imagen1.png",
+                  "alt": "Imagen 1",
+                  "containerClassName": "h-full w-full",
+                  "className": "cursor-pointer object-cover h-full w-full",
+                  "hoverScale": true,
+                  "onClick": {"action": "menu", "target": "Categoría 1"}
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
+```
+
+### 14.9 Tailwind y Estilos Dinámicos
+
+Para estilos que no existen en el código fuente (ej: `p-[10px]`), usar `style`:
+
+```json
+// ❌ NO funciona si no existe en archivos .tsx
+"className": "p-[10px]"
+
+// ✅ Siempre funciona
+"style": { "padding": "10px" }
+```
+
+**Clases en el Safelist de Tailwind:**
+- Padding: `p-0` a `p-10`, `p-[Xpx]`
+- Margin: `m-0` a `m-10`, `m-[Xpx]`
+- Gap: `gap-[Xpx]`
+
+### 14.10 Checklist para Nueva Slide
+
+- [ ] Definir `id` único
+- [ ] Elegir `mobileViewports` (2 o 4)
+- [ ] Configurar `layout` (flex o grid)
+- [ ] Añadir celdas/children con contenido
+- [ ] Usar `style` para valores de padding/margin específicos
+- [ ] Configurar `popups` si la slide tiene diálogos
+- [ ] Verificar en navegador desktop y móvil
+- [ ] Probar todas las interacciones (hover, click)
+
+---
