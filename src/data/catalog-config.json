@@ -2094,12 +2094,11 @@
       {
         "id": "slide14",
         "mobileViewports": 2,
-        "style": { "padding": "30px" },
+        "style": { "padding": "10px","paddingRight": "0px" },
         "layout": {
           "type": "flex",
           "direction": "row",
-          "gap": "16px",
-          "style": { "display": "flex", "flexDirection": "row", "height": "100%", "width": "100%", "gap": "16px" },
+          "style": { "display": "flex", "flexDirection": "row", "height": "100%", "width": "100%", "gap": "30px" },
           "children": [
             {
               "id": "left-column",
@@ -2115,7 +2114,7 @@
                       "style": { "flex": "2", "minHeight": "0", "overflow": "hidden" },
                       "content": {
                         "type": "image",
-                        "src": "/images/{locale}/slide14/cuidadoSuelo.png",
+                        "src": "/images/{locale}/slide14/cuidadoSuelo.jpg",
                         "alt": "Cuidado del suelo",
                         "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
                         "width": 535,
