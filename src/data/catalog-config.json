@@ -1770,6 +1770,332 @@
             {"src": "/images/{locale}/slide12/profesionales/carrusel-motosierra_profesional_10.png", "href": {"es": "https://tiendahusqvarna.es/motosierras/motosierras-gasolina/motosierra-592-xp/", "pt": "https://lojahusqvarna.pt/motosserras/motosserras-a-gasolina/592xp/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motosierra 592XP", "id": "18860", "price": "", "category": "Motosierra", "variant": "Profesional"}}
           ]
         }
+      },
+      {
+        "id": "slide13",
+        "mobileViewports": 2,
+        "style": { "padding": "10px" },
+        "layout": {
+          "type": "flex",
+          "direction": "row",
+          "gap": "15px",
+          "style": { "display": "flex", "flexDirection": "row", "height": "100%", "width": "100%", "gap": "15px" },
+          "children": [
+            {
+              "id": "left-column",
+              "style": { "flex": "1", "height": { "mobile": "50%", "desktop": "100%" }, "overflow": "hidden", "display": "flex", "flexDirection": "row", "gap": "10px" },
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "row",
+                  "gap": "10px",
+                  "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "10px" },
+                  "children": [
+                    {
+                      "id": "sub-left",
+                      "style": { "flex": "3", "height": "100%", "minHeight": "0", "overflow": "hidden", "display": "flex", "flexDirection": "column", "gap": "10px" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "column",
+                          "gap": "10px",
+                          "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%", "gap": "10px" },
+                          "children": [
+                            {
+                              "id": "encuentraTuDesbrozadora",
+                              "style": { "flex": "2", "minHeight": "0", "overflow": "hidden" },
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide13/encuentraTuDesbrozadora.png",
+                                "alt": "Encuentra tu desbrozadora",
+                                "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "width": 313,
+                                "height": 525
+                              }
+                            },
+                            {
+                              "id": "cortarFacil",
+                              "style": { "flex": "1", "minHeight": "0", "overflow": "hidden" },
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide13/cortarFacil.png",
+                                "alt": "Cortar setos nunca fue tan fácil",
+                                "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "width": 313,
+                                "height": 236
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "sub-right",
+                      "style": { "flex": "2", "height": "100%", "minHeight": "0", "overflow": "hidden", "display": "flex", "flexDirection": "column", "gap": "4px" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "column",
+                          "gap": "4px",
+                          "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%", "gap": "4px" },
+                          "children": [
+                            {
+                              "id": "card-recortadorasBateria",
+                              "style": { "flex": "1", "minHeight": "0", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide13/recortadorasBateria.jpg",
+                                "alt": "Recortadoras con batería",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "recortadorasBateria",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-recortadorasMultifuncion",
+                              "style": { "flex": "1", "minHeight": "0", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide13/recortadorasMultifuncion.jpg",
+                                "alt": "Recortadoras multifunción",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "recortadorasMultifuncion",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-cortasetosBateria",
+                              "style": { "flex": "1", "minHeight": "0", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide13/cortasetosBateria.jpg",
+                                "alt": "Cortasetos a batería",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "cortasetosBateria",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "right-section",
+              "style": { "flex": "1", "height": { "mobile": "50%", "desktop": "100%" }, "overflow": "hidden", "display": "flex", "flexDirection": "column", "gap": "4px" },
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "column",
+                  "gap": "4px",
+                  "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%", "gap": "4px" },
+                  "children": [
+                    {
+                      "id": "row-1",
+                      "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "gap": "4px" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "4px",
+                          "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "4px" },
+                          "children": [
+                            {
+                              "id": "card-recortadorasGasolina",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide13/recortadorasGasolina.jpg",
+                                "alt": "Recortadoras a gasolina",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "recortadorasGasolina",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-desbrozadorasPro",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide13/recortadorasProfesionales.jpg",
+                                "alt": "Desbrozadoras profesionales",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "desbrozadorasProfesionales",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "row-2",
+                      "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "gap": "4px" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "4px",
+                          "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "4px" },
+                          "children": [
+                            {
+                              "id": "accesoriosRecortadoras",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide13/accesoriosRecortadoras.jpg",
+                                "alt": "Accesorios recortadoras",
+                                "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "width": 253,
+                                "height": 254
+                              }
+                            },
+                            {
+                              "id": "accesoriosDesbrozadoras",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide13/accesoriosDesbrozadoras.jpg",
+                                "alt": "Accesorios desbrozadoras",
+                                "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "width": 253,
+                                "height": 254
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "row-3",
+                      "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "gap": "4px" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "4px",
+                          "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "4px" },
+                          "children": [
+                            {
+                              "id": "card-cortasetosGasolina",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide13/cortasetosGasolina.jpg",
+                                "alt": "Cortasetos a gasolina",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "cortasetosGasolina",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-cortasetosPro",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide13/cortasetosProfesionales.jpg",
+                                "alt": "Cortasetos profesionales",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "cortasetosProfesionales",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "popups": {
+          "cortasetosBateria": [
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_00.png", "href": {"es": "https://tiendahusqvarna.es/aspire/kit-cortasetos-aspire-h50-p4a/", "pt": "https://lojahusqvarna.pt/aspire/corta-sebes-aspire-h50-p4a/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Aspire H50", "id": "19000", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_01.png", "href": {"es": "https://tiendahusqvarna.es/aspire/cortasetos-aspire-s20-p4a/", "pt": "https://lojahusqvarna.pt/aspire/corta-sebes-aspire-s20-p4a/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Aspire S20", "id": "19001", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_02.png", "href": {"es": "https://www.husqvarna.com/es/cortasetos/aspire-se20-p4a/", "pt": "https://www.husqvarna.com/pt/corta-sebes/aspire-s20-p4a-aspire-haste-p4a-sem-bateria-e-carregador/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Aspire SE20", "id": "19002", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_03.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-bateria/cortasetos-120itk4-h/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-bateria/120itk4-h/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 120iTK4-H", "id": "19003", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_04.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-bateria/cortasetos-120itk4-h/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-bateria/120itk4-h/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 120iTK4-H Kit", "id": "19004", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_05.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/kit-recortadora-215il/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-bateria/kit-aparador215il-cortasebes215ihd45/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Kit Recortadora 215iL", "id": "19005", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_06.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadora-bateria/kit-recortadora-215il-y-cortasetos-215ihd45/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-bateria/kit-aparador215il-cortasebes215ihd45/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Kit 215iL + 215iHD45", "id": "19006", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_07.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-bateria/cortasetos-522ihd60/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-bateria/corta-sebes-522ihd60/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 522iHD60", "id": "19007", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_08.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-bateria/cortasetos-522ihd75/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-bateria/corta-sebes-522ihd75/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 522iHD75", "id": "19008", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_09.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-bateria/cortasetos-520ihe3/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-bateria/520ihe3/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 520iHE3", "id": "19009", "price": "", "category": "Cortasetos", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/cortasetosBateria/carrusel-cortasetos-bat_10.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-bateria/cortasetos-520iht4/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-bateria/520iht4/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 520iHT4", "id": "19010", "price": "", "category": "Cortasetos", "variant": "Batería"}}
+          ],
+          "recortadorasBateria": [
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_00.png", "href": {"es": "https://tiendahusqvarna.es/aspire/recortadora-aspire-t28-p4a/", "pt": "https://lojahusqvarna.pt/aspire/aparador-de-relva-aspire-t28-p4a/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Aspire T28", "id": "19020", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_02.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/recortadora-110il-flxi/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/110il/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Recortadora 110iL", "id": "19021", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_03.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/kit-recortadora-110il-flxi/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/110il/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Kit Recortadora 110iL", "id": "19022", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_06.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Recortadoras Batería", "id": "19023", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_07.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Recortadoras Batería", "id": "19024", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_08.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/desbrozadora-325ir/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/325ir/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 325iR", "id": "19025", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_09.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/recortadora-525ilk/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/525ilk/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Recortadora 525iLK", "id": "19026", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_10.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/recortadora-525ilk/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/525ilk/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Recortadora 525iLK Kit", "id": "19027", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_11.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/desbrozadora-525ilxt/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/525ilxt/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 525iLXT", "id": "19028", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_12.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/desbrozadora-525irxt/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/525irxt/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 525iRXT", "id": "19029", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_13.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/desbrozadora-535irx/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/rocadora-bateria-535irx/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 535iRX", "id": "19030", "price": "", "category": "Recortadoras", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide13/recortadorasBateria/carrusel-recortadora-bat_14.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-bateria/desbrozadora-535irxt/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-bateria/535irxt/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 535iRXT", "id": "19031", "price": "", "category": "Recortadoras", "variant": "Batería"}}
+          ],
+          "recortadorasMultifuncion": [
+            {"src": "/images/{locale}/slide13/recortadorasMultifuncion/carrusel-recortadoras_multi_00.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-129lk-combi/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/rocadora-multifuncoes-129lk/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 129LK", "id": "19040", "price": "", "category": "Recortadoras", "variant": "Multifunción"}},
+            {"src": "/images/{locale}/slide13/recortadorasMultifuncion/carrusel-recortadoras_multi_01.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-525lk/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-a-gasolina/525lk-somotor/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 525LK", "id": "19041", "price": "", "category": "Recortadoras", "variant": "Multifunción"}},
+            {"src": "/images/{locale}/slide13/recortadorasMultifuncion/carrusel-recortadoras_multi_02.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-525lk-trimmer/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/525lk/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 525LK Trimmer", "id": "19042", "price": "", "category": "Recortadoras", "variant": "Multifunción"}},
+            {"src": "/images/{locale}/slide13/recortadorasMultifuncion/carrusel-recortadoras_multi_03.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-535lk/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/535lk/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 535LK", "id": "19043", "price": "", "category": "Recortadoras", "variant": "Multifunción"}}
+          ],
+          "recortadorasGasolina": [
+            {"src": "/images/{locale}/slide13/recortadorasGasolina/carrusel-recortadoras_desbrozadoras_gasolina_00.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/recortadora-122c/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/aparador-de-relva-122c/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Recortadora 122C", "id": "19050", "price": "", "category": "Recortadoras", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide13/recortadorasGasolina/carrusel-recortadoras_desbrozadoras_gasolina_01.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/recortadora-122l/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/aparador-de-relva-122l/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Recortadora 122L", "id": "19051", "price": "", "category": "Recortadoras", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide13/recortadorasGasolina/carrusel-recortadoras_desbrozadoras_gasolina_02.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-122r/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/122r/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 122R", "id": "19052", "price": "", "category": "Recortadoras", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide13/recortadorasGasolina/carrusel-recortadoras_desbrozadoras_gasolina_03.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-333r-ii/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/333r/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 333R II", "id": "19053", "price": "", "category": "Recortadoras", "variant": "Gasolina"}}
+          ],
+          "desbrozadorasProfesionales": [
+            {"src": "/images/{locale}/slide13/desbrozadorasProfesionales/carrusel-desbrozadoras_pro_00.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-543rs/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/543-rs/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 543RS", "id": "19060", "price": "", "category": "Desbrozadoras", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/desbrozadorasProfesionales/carrusel-desbrozadoras_pro_01.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-553rs/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/553-rs/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 553RS", "id": "19061", "price": "", "category": "Desbrozadoras", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/desbrozadorasProfesionales/carrusel-desbrozadoras_pro_02.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-535rx/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/535rx/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 535RX", "id": "19062", "price": "", "category": "Desbrozadoras", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/desbrozadorasProfesionales/carrusel-desbrozadoras_pro_03.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-545rx/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/rocadora-545-rx/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 545RX", "id": "19063", "price": "", "category": "Desbrozadoras", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/desbrozadorasProfesionales/carrusel-desbrozadoras_pro_04.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-545rxt-autotune/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/545rxt/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 545RXT", "id": "19064", "price": "", "category": "Desbrozadoras", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/desbrozadorasProfesionales/carrusel-desbrozadoras_pro_05.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-555rxt/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/555rxt/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 555RXT", "id": "19065", "price": "", "category": "Desbrozadoras", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/desbrozadorasProfesionales/carrusel-desbrozadoras_pro_06.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-555frm/", "pt": "https://lojahusqvarna.pt/rocadoras/rocadoras-gasolina/555frm/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 555FRM", "id": "19066", "price": "", "category": "Desbrozadoras", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/desbrozadorasProfesionales/carrusel-desbrozadoras_pro_07.png", "href": {"es": "https://tiendahusqvarna.es/desbrozadoras/desbrozadoras-gasolina/desbrozadora-553rbx/", "pt": "https://www.husqvarna.com/pt/rocadoras/husqvarna-553rbx/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Desbrozadora 553RBX", "id": "19067", "price": "", "category": "Desbrozadoras", "variant": "Profesional"}}
+          ],
+          "cortasetosGasolina": [
+            {"src": "/images/{locale}/slide13/cortasetosGasolina/carrusel-cortasetos_gasolina_00.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-gasolina/cortasetos-122hd45/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-gasolina/122hd45/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 122HD45", "id": "19070", "price": "", "category": "Cortasetos", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide13/cortasetosGasolina/carrusel-cortasetos_gasolina_01.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-gasolina/cortasetos-122hd60/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-gasolina/122hd60/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 122HD60", "id": "19071", "price": "", "category": "Cortasetos", "variant": "Gasolina"}}
+          ],
+          "cortasetosProfesionales": [
+            {"src": "/images/{locale}/slide13/cortasetosProfesionales/carrusel-cortasetos_pro_00.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-gasolina/cortasetos-522hd60x/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-gasolina/522hd60x/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 522HD60X", "id": "19080", "price": "", "category": "Cortasetos", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/cortasetosProfesionales/carrusel-cortasetos_pro_01.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-gasolina/cortasetos-522hdr60x/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-gasolina/522hdr60x/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 522HDR60X", "id": "19081", "price": "", "category": "Cortasetos", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/cortasetosProfesionales/carrusel-cortasetos_pro_02.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-gasolina/cortasetos-522hdr75x/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-gasolina/522hdr75x/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 522HDR75X", "id": "19082", "price": "", "category": "Cortasetos", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/cortasetosProfesionales/carrusel-cortasetos_pro_03.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-gasolina/525he3/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-gasolina/corta-sebes-525he3/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 525HE3", "id": "19083", "price": "", "category": "Cortasetos", "variant": "Profesional"}},
+            {"src": "/images/{locale}/slide13/cortasetosProfesionales/carrusel-cortasetos_pro_04.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-gasolina/cortasetos-525he4/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-gasolina/corta-sebes-525he4/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 525HE4", "id": "19084", "price": "", "category": "Cortasetos", "variant": "Profesional"}}
+          ]
+        }
       }
     ]
   }
