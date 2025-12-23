@@ -2301,6 +2301,108 @@
         "type": "customComponent",
         "component": "Slide15",
         "mobileViewports": 2
+      },
+      {
+        "id": "slide16",
+        "mobileViewports": 2,
+        "style": { "padding": "10px" },
+        "layout": {
+          "type": "flex",
+          "direction": "column",
+          "gap": "15px",
+          "style": { "display": "flex", "flexDirection": "column", "height": "100%", "width": "100%", "gap": "15px" },
+          "children": [
+            {
+              "id": "background-image",
+              "style": { "width": "100%", "overflow": "hidden" },
+              "content": {
+                "type": "image",
+                "src": "/images/{locale}/slide16/background.png",
+                "alt": "Generadores y motobombas",
+                "style": { "width": "100%", "height": "auto", "objectFit": "cover" },
+                "width": 1130,
+                "height": 463
+              }
+            },
+            {
+              "id": "bottom-row",
+              "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "gap": "30px", "justifyContent": "space-between" },
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "row",
+                  "gap": "30px",
+                  "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "30px", "justifyContent": "space-between" },
+                  "children": [
+                    {
+                      "id": "imageTrastoLeft",
+                      "style": { "flex": "1", "maxWidth": "253px", "height": "100%", "overflow": "hidden" },
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide16/imageTrastoLeft.png",
+                        "alt": "Trasto izquierda",
+                        "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                        "width": 253,
+                        "height": 292
+                      }
+                    },
+                    {
+                      "id": "card-generadores",
+                      "style": { "flex": "1", "maxWidth": "253px", "height": "100%", "overflow": "hidden" },
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide16/generadores.png",
+                        "alt": "Generadores",
+                        "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                        "variant": "floating",
+                        "popupKey": "generadores",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "card-motobombas",
+                      "style": { "flex": "1", "maxWidth": "253px", "height": "100%", "overflow": "hidden" },
+                      "content": {
+                        "type": "productCard",
+                        "imageSrc": "/images/{locale}/slide16/motobombas.png",
+                        "alt": "Motobombas",
+                        "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                        "variant": "floating",
+                        "popupKey": "motobombas",
+                        "buttonContainerClassName": "!bottom-[10%]",
+                        "buttonClassName": "hidden"
+                      }
+                    },
+                    {
+                      "id": "imageTrastoRight",
+                      "style": { "flex": "1", "maxWidth": "253px", "height": "100%", "overflow": "hidden" },
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide16/imageTrastoRight.png",
+                        "alt": "Trasto derecha",
+                        "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                        "width": 253,
+                        "height": 292
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "popups": {
+          "generadores": [
+            {"src": "/images/{locale}/slide16/generadores/carrusel-generador_00.png", "href": {"es": "https://tiendahusqvarna.com/motobombas-generadores/generador-g2500p", "pt": "https://lojahusqvarna.com/geradores/g2500p"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Generador G2500P", "id": "19200", "price": "", "category": "Generadores", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide16/generadores/carrusel-generador_01.png", "href": {"es": "https://tiendahusqvarna.com/motobombas-generadores/generador-g3200p", "pt": "https://lojahusqvarna.com/geradores/g3200p"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Generador G3200P", "id": "19201", "price": "", "category": "Generadores", "variant": "Gasolina"}}
+          ],
+          "motobombas": [
+            {"src": "/images/{locale}/slide16/motobombas/carrusel-motobomba_00.png", "href": {"es": "https://tiendahusqvarna.es/motobombas-generadores/motobombas/motobomba-w50p/", "pt": "https://lojahusqvarna.pt/motobombas/w50p/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motobomba W50P", "id": "19210", "price": "", "category": "Motobombas", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide16/motobombas/carrusel-motobomba_01.png", "href": {"es": "https://tiendahusqvarna.es/motobombas-generadores/motobombas/motobomba-w80p/", "pt": "https://lojahusqvarna.pt/motobombas/w80p/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motobomba W80P", "id": "19211", "price": "", "category": "Motobombas", "variant": "Gasolina"}}
+          ]
+        }
       }
     ]
   }
