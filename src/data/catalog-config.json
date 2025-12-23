@@ -1910,7 +1910,7 @@
                           "children": [
                             {
                               "id": "card-recortadorasGasolina",
-                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "style": { "flex": "1", "height": "100%", "position": "relative", "zIndex": "10" },
                               "content": {
                                 "type": "productCard",
                                 "imageSrc": "/images/{locale}/slide13/recortadorasGasolina.jpg",
@@ -1924,7 +1924,7 @@
                             },
                             {
                               "id": "card-desbrozadorasPro",
-                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "style": { "flex": "1", "height": "100%", "position": "relative", "zIndex": "10" },
                               "content": {
                                 "type": "productCard",
                                 "imageSrc": "/images/{locale}/slide13/recortadorasProfesionales.jpg",
@@ -1992,7 +1992,7 @@
                           "children": [
                             {
                               "id": "card-cortasetosGasolina",
-                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "style": { "flex": "1", "height": "100%", "position": "relative", "zIndex": "10" },
                               "content": {
                                 "type": "productCard",
                                 "imageSrc": "/images/{locale}/slide13/cortasetosGasolina.jpg",
@@ -2006,7 +2006,7 @@
                             },
                             {
                               "id": "card-cortasetosPro",
-                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "style": { "flex": "1", "height": "100%", "position": "relative", "zIndex": "10" },
                               "content": {
                                 "type": "productCard",
                                 "imageSrc": "/images/{locale}/slide13/cortasetosProfesionales.jpg",
