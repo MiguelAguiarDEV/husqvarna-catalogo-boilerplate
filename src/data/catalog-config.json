@@ -1552,132 +1552,165 @@
       {
         "id": "slide12",
         "mobileViewports": 2,
-        "style": { "padding": "30px", "width": "100%" },
+        "style": { "padding": "10px" },
         "layout": {
           "type": "flex",
           "direction": "row",
-          "gap": "12px",
-          "style": { "display": "flex", "flexDirection": "row", "gap": "12px", "justifyContent": "center", "width": "100%", "height": "100%" },
+          "gap": "15px",
+          "style": { "display": "flex", "flexDirection": "row", "height": "100%", "width": "100%", "gap": "15px" },
           "children": [
             {
               "id": "left-column",
-              "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%" },
+              "style": { "flex": "1","marginTop": "20px", "height": "100%", "overflow": "hidden" },
+              "content": {
+                "type": "image",
+                "src": "/images/{locale}/slide12/midBackgroundLeft.png",
+                "alt": "background left",
+                "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                "width": 535,
+                "height": 752
+              }
+            },
+            {
+              "id": "right-section",
+              "style": { "flex": "1", "height": { "mobile": "50%", "desktop": "100%" }, "display": "flex", "flexDirection": "column", "gap": "4px" },
               "content": {
                 "type": "nestedFlex",
                 "layout": {
                   "type": "flex",
                   "direction": "column",
-                  "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%" },
+                  "gap": "4px",
+                  "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%", "gap": "4px" },
                   "children": [
                     {
-                      "id": "main-background",
-                      "style": { "maxWidth": "535px", "maxHeight": "511px", "width": "100%", "height": "100%" },
+                      "id": "row-1",
+                      "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "gap": "4px" },
                       "content": {
-                        "type": "image",
-                        "src": "/images/{locale}/slide12/midBackgroundLeft.png",
-                        "alt": "background left",
-                        "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
-                        "width": 535,
-                        "height": 511
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "8px",
+                          "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "8px" },
+                          "children": [
+                            {
+                              "id": "card-electricas",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide12/carousel_electricasYBateria.jpg",
+                                "alt": "Motosierra eléctrica y a batería",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "electricasYBateria",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-hobby",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide12/carousel_hobby.jpg",
+                                "alt": "Motosierra hobby",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "hobby",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "row-2",
+                      "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "gap": "4px" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "4px",
+                          "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "4px" },
+                          "children": [
+                            {
+                              "id": "card-multiuso",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide12/carousel_multiuso.jpg",
+                                "alt": "Motosierra multiuso",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "multiuso",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-profesionales",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide12/carousel_profesionales.jpg",
+                                "alt": "Motosierras profesionales",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "profesionales",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "row-3",
+                      "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "gap": "4px" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "4px",
+                          "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "4px" },
+                          "children": [
+                            {
+                              "id": "card-cuidado",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide12/carousel_cuidadoArboles.jpg",
+                                "alt": "Motosierras para el cuidado de árboles",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "cuidadoArboles",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "productos-recomendados",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide12/carousel_productosRecomendados.jpg",
+                                "alt": "Productos recomendados",
+                                "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "width": 200,
+                                "height": 200
+                              }
+                            }
+                          ]
+                        }
                       }
                     }
                   ]
                 }
-              }
-            },
-            {
-              "id": "right-grid",
-              "style": { "width": "45%", "height": "100%" },
-              "layout": {
-                "type": "grid",
-                "columns": 2,
-                "rows": 3,
-                "gap": "12px",
-                "style": { "display": "grid", "gridTemplateColumns": "1fr 1fr", "gridTemplateRows": "1fr 1fr 1fr", "gap": "12px", "alignItems": "center", "justifyContent": "center", "width": "100%", "height": { "mobile": "50%", "desktop": "100%" } },
-                "cells": [
-                  {
-                    "id": "card-electricas",
-                    "style": { "width": "100%", "height": "100%" },
-                    "content": {
-                      "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide12/carousel_electricasYBateria.jpg",
-                      "alt": "Motosierra eléctrica y a batería",
-                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
-                      "variant": "floating",
-                      "popupKey": "electricasYBateria",
-                      "buttonContainerClassName": "!bottom-[10%]",
-                      "buttonClassName": "hidden"
-                    }
-                  },
-                  {
-                    "id": "card-hobby",
-                    "style": { "width": "100%", "height": "100%" },
-                    "content": {
-                      "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide12/carousel_hobby.jpg",
-                      "alt": "Motosierra hobby",
-                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
-                      "variant": "floating",
-                      "popupKey": "hobby",
-                      "buttonContainerClassName": "!bottom-[10%]",
-                      "buttonClassName": "hidden"
-                    }
-                  },
-                  {
-                    "id": "card-multiuso",
-                    "style": { "width": "100%", "height": "100%" },
-                    "content": {
-                      "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide12/carousel_multiuso.jpg",
-                      "alt": "Motosierra multiuso",
-                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
-                      "variant": "floating",
-                      "popupKey": "multiuso",
-                      "buttonContainerClassName": "!bottom-[10%]",
-                      "buttonClassName": "hidden"
-                    }
-                  },
-                  {
-                    "id": "card-profesionales",
-                    "style": { "width": "100%", "height": "100%" },
-                    "content": {
-                      "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide12/carousel_profesionales.jpg",
-                      "alt": "Motosierras profesionales",
-                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
-                      "variant": "floating",
-                      "popupKey": "profesionales",
-                      "buttonContainerClassName": "!bottom-[10%]",
-                      "buttonClassName": "hidden"
-                    }
-                  },
-                  {
-                    "id": "card-cuidado",
-                    "style": { "width": "100%", "height": "100%" },
-                    "content": {
-                      "type": "productCard",
-                      "imageSrc": "/images/{locale}/slide12/carousel_cuidadoArboles.jpg",
-                      "alt": "Motosierras para el cuidado de árboles",
-                      "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
-                      "variant": "floating",
-                      "popupKey": "cuidadoArboles",
-                      "buttonContainerClassName": "!bottom-[10%]",
-                      "buttonClassName": "hidden"
-                    }
-                  },
-                  {
-                    "id": "productos-recomendados",
-                    "style": { "width": "100%", "height": "100%", "padding": "0 15px" },
-                    "content": {
-                      "type": "image",
-                      "src": "/images/{locale}/slide12/carousel_productosRecomendados.jpg",
-                      "alt": "Productos recomendados",
-                      "style": { "width": "100%", "height": "auto", "objectFit": "contain" },
-                      "width": 200,
-                      "height": 150
-                    }
-                  }
-                ]
               }
             }
           ]
