@@ -78,8 +78,8 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
         </div>
         {/* lower part */}
         {/* first row */}
-        <div className="flex flex-row gap-[30px] mt-[15px]">
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+        <div className="flex flex-row flex-wrap gap-1 md:gap-[30px] mt-0 md:mt-[15px]">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/leftItems/ficha-1.png`}
               alt="Ficha 1"
@@ -96,7 +96,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
               }}
             />
           </div>
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/leftItems/ficha-2.png`}
               alt="Ficha 1"
@@ -113,7 +113,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
               }}
             />
           </div>
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/leftItems/ficha-3.png`}
               alt="Ficha 1"
@@ -131,7 +131,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
             />
           </div>
 
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/rightItems/ficha-1.png`}
               alt="Ficha 1"
@@ -148,7 +148,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
               }}
             />
           </div>
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/rightItems/ficha-2.png`}
               alt="Ficha 1"
@@ -165,7 +165,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
               }}
             />
           </div>
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/rightItems/ficha-3.png`}
               alt="Ficha 1"
@@ -184,8 +184,8 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
           </div>
         </div>
         {/* second row */}
-        <div className="flex flex-row gap-[30px] mt-[15px]">
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+        <div className="flex flex-row flex-wrap gap-1 md:gap-[30px] mt-0 md:mt-[15px]">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/leftItems/ficha-4.png`}
               alt="Ficha 1"
@@ -202,7 +202,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
               }}
             />
           </div>
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/leftItems/ficha-5.png`}
               alt="Ficha 1"
@@ -219,7 +219,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
               }}
             />
           </div>
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/leftItems/ficha-6.png`}
               alt="Ficha 1"
@@ -236,7 +236,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
               }}
             />
           </div>
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/rightItems/ficha-4.png`}
               alt="Ficha 1"
@@ -253,7 +253,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
               }}
             />
           </div>
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/rightItems/ficha-5.png`}
               alt="Ficha 1"
@@ -270,7 +270,7 @@ export const Slide17: React.FC<Slide17Props> = ({ isActive }) => {
               }}
             />
           </div>
-          <div className="max-w-[158px] max-h-[75px] w-full h-full hover:scale-105">
+          <div className="w-[15%] md:max-w-[158px] md:max-h-[75px] md:w-full h-full hover:scale-105">
             <Image
               src={`/images/${locale}/slide17/rightItems/ficha-6.png`}
               alt="Ficha 1"

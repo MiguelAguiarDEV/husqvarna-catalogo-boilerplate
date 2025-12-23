@@ -2403,6 +2403,12 @@
             {"src": "/images/{locale}/slide16/motobombas/carrusel-motobomba_01.png", "href": {"es": "https://tiendahusqvarna.es/motobombas-generadores/motobombas/motobomba-w80p/", "pt": "https://lojahusqvarna.pt/motobombas/w80p/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motobomba W80P", "id": "19211", "price": "", "category": "Motobombas", "variant": "Gasolina"}}
           ]
         }
+      },
+      {
+        "id": "slide17",
+        "type": "customComponent",
+        "component": "Slide17",
+        "mobileViewports": 2
       }
     ]
   }
