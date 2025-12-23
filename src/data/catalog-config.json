@@ -45,7 +45,7 @@
               "layout": {
                 "type": "flex",
                 "direction": "column",
-                "style": { "display": "flex", "marginTop": "30px","flexDirection": "column", "height": "auto", "maxHeight": "100%", "width": "100%", "gap": "30px" },
+                "style": { "display": "flex","flexDirection": "column", "height": "auto", "maxHeight": "100%", "width": "100%", "gap": "30px" },
                 "children": [
                   {
                     "id": "main-image-container",
@@ -109,12 +109,12 @@
                           },
                           {
                             "id": "logo",
-                            "style": { "display": "flex", "alignItems": "center" },
+                            "style": { "display": "flex", "alignItems": "center", "maxWidth": { "mobile": "40px", "desktop": "102px" }, "maxHeight": { "mobile": "50px", "desktop": "118px" } },
                             "content": {
                               "type": "image",
                               "src": "/images/{locale}/slide2/husqvarnaLogo.png",
                               "alt": "Husqvarna Logo",
-                              "style": { "width": "10%", "height": "auto" },
+                              "style": { "width": { "mobile": "40px", "desktop": "100%" }, "height": { "mobile": "auto", "desktop": "100%" } },
                               "width": 102,
                               "height": 118
                             }
