@@ -2090,6 +2090,212 @@
             {"src": "/images/{locale}/slide13/cortasetosProfesionales/carrusel-cortasetos_pro_04.png", "href": {"es": "https://tiendahusqvarna.es/cortasetos/cortasetos-gasolina/cortasetos-525he4/", "pt": "https://lojahusqvarna.pt/corta-sebes/corta-sebes-gasolina/corta-sebes-525he4/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Cortasetos 525HE4", "id": "19084", "price": "", "category": "Cortasetos", "variant": "Profesional"}}
           ]
         }
+      },
+      {
+        "id": "slide14",
+        "mobileViewports": 2,
+        "style": { "padding": "30px" },
+        "layout": {
+          "type": "flex",
+          "direction": "row",
+          "gap": "16px",
+          "style": { "display": "flex", "flexDirection": "row", "height": "100%", "width": "100%", "gap": "16px" },
+          "children": [
+            {
+              "id": "left-column",
+              "style": { "flex": "1", "height": { "mobile": "50%", "desktop": "100%" }, "minHeight": "0", "display": "flex", "flexDirection": "column", "gap": "10px" },
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%", "gap": "10px" },
+                  "children": [
+                    {
+                      "id": "cuidadoSuelo",
+                      "style": { "flex": "2", "minHeight": "0", "overflow": "hidden" },
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide14/cuidadoSuelo.png",
+                        "alt": "Cuidado del suelo",
+                        "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                        "width": 535,
+                        "height": 510
+                      }
+                    },
+                    {
+                      "id": "cuidadoTerreno",
+                      "style": { "flex": "1", "minHeight": "0", "overflow": "hidden" },
+                      "content": {
+                        "type": "image",
+                        "src": "/images/{locale}/slide14/cuidadoTerreno.png",
+                        "alt": "Cuidado del terreno",
+                        "style": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                        "width": 535,
+                        "height": 241
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "right-section",
+              "style": { "flex": "1", "height": { "mobile": "50%", "desktop": "100%" }, "display": "flex", "flexDirection": "column", "gap": "4px" },
+              "content": {
+                "type": "nestedFlex",
+                "layout": {
+                  "type": "flex",
+                  "direction": "column",
+                  "gap": "4px",
+                  "style": { "display": "flex", "flexDirection": "column", "width": "100%", "height": "100%", "gap": "4px" },
+                  "children": [
+                    {
+                      "id": "row-1",
+                      "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "gap": "4px" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "8px",
+                          "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "8px" },
+                          "children": [
+                            {
+                              "id": "card-bateria",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide14/sopladoresBateria.png",
+                                "alt": "Sopladores con batería",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "bateria",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-gasolina",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide14/sopladoresGasolina.png",
+                                "alt": "Sopladores con gasolina",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "gasolina",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "row-2",
+                      "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "justifyContent": "flex-end" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "justifyContent": "flex-end" },
+                          "children": [
+                            {
+                              "id": "sopladora-image",
+                              "style": { "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "image",
+                                "src": "/images/{locale}/slide14/sopladora.png",
+                                "alt": "Sopladora",
+                                "style": { "height": "100%", "width": "auto", "objectFit": "contain" },
+                                "width": 410,
+                                "height": 500
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "id": "row-3",
+                      "style": { "flex": "1", "minHeight": "0", "display": "flex", "flexDirection": "row", "gap": "4px" },
+                      "content": {
+                        "type": "nestedFlex",
+                        "layout": {
+                          "type": "flex",
+                          "direction": "row",
+                          "gap": "4px",
+                          "style": { "display": "flex", "flexDirection": "row", "width": "100%", "height": "100%", "gap": "4px" },
+                          "children": [
+                            {
+                              "id": "card-nieve",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide14/sopladoresNieve.png",
+                                "alt": "Sopladores de nieve",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "nieve",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            },
+                            {
+                              "id": "card-motoazadas",
+                              "style": { "flex": "1", "height": "100%", "overflow": "hidden" },
+                              "content": {
+                                "type": "productCard",
+                                "imageSrc": "/images/{locale}/slide14/motoazadas.png",
+                                "alt": "Motoazadas",
+                                "imgStyle": { "width": "100%", "height": "100%", "objectFit": "cover" },
+                                "variant": "floating",
+                                "popupKey": "motoazadas",
+                                "buttonContainerClassName": "!bottom-[10%]",
+                                "buttonClassName": "hidden"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "popups": {
+          "bateria": [
+            {"src": "/images/{locale}/slide14/bateria/carrusel-soplador-bat_00_v2.png", "href": {"es": "https://tiendahusqvarna.es/aspire/kit-soplador-aspire-b8x-p4a/", "pt": "https://lojahusqvarna.pt/aspire/soprador-aspire-b8x-p4a/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Aspire B8X", "id": "19100", "price": "", "category": "Sopladores", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide14/bateria/carrusel-soplador-bat_01.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-bateria/kit-soplador-120ib/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-bateria/120ib/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 120iB", "id": "19101", "price": "", "category": "Sopladores", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide14/bateria/carrusel-soplador-bat_02.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-bateria/kit-soplador-120ib/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-bateria/120ib/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 120iB Kit", "id": "19102", "price": "", "category": "Sopladores", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide14/bateria/carrusel-soplador-bat_03.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-bateria/soplador-340ibt/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-bateria/soprador-folhas-a-bateria-340ibt/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 340iBT", "id": "19103", "price": "", "category": "Sopladores", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide14/bateria/carrusel-soplador-bat_04.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-bateria/soplador-525ib/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-bateria/soprador-folhas-a-bateria-525ib-mark2/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 525iB", "id": "19104", "price": "", "category": "Sopladores", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide14/bateria/carrusel-soplador-bat_05.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-bateria/soplador-530ibx/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-bateria/soprador-folhas-a-bateria-530ibx/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 530iBX", "id": "19105", "price": "", "category": "Sopladores", "variant": "Batería"}},
+            {"src": "/images/{locale}/slide14/bateria/carrusel-soplador-bat_06.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-bateria/soplador-550ibtx/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-bateria/soprador-folhas-a-bateria-550ibtx/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 550iBTX", "id": "19106", "price": "", "category": "Sopladores", "variant": "Batería"}}
+          ],
+          "gasolina": [
+            {"src": "/images/{locale}/slide14/gasolina/carrusel-soplador-gas_00.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-gasolina/soplador-125b/", "pt": "https://lojahusqvarna.pt/sopradores/gasolina/soprador-125b/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 125B", "id": "19110", "price": "", "category": "Sopladores", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide14/gasolina/carrusel-soplador-gas_01.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-gasolina/soplador-125bvx/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-gasolina/soprador-125-bvx/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 125BVX", "id": "19111", "price": "", "category": "Sopladores", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide14/gasolina/carrusel-soplador-gas_02.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-gasolina/soplador-525bx/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-gasolina/525bx/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 525BX", "id": "19112", "price": "", "category": "Sopladores", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide14/gasolina/carrusel-soplador-gas_03.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-gasolina/soplador-345bt/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-gasolina/soprador-345bt/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 345BT", "id": "19113", "price": "", "category": "Sopladores", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide14/gasolina/carrusel-soplador-gas_04.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-gasolina/soplador-350bt/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-gasolina/soprador-350bt/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 350BT", "id": "19114", "price": "", "category": "Sopladores", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide14/gasolina/carrusel-soplador-gas_05.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-360bt/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-gasolina/soprador-360bt/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 360BT", "id": "19115", "price": "", "category": "Sopladores", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide14/gasolina/carrusel-soplador-gas_06.png", "href": {"es": "https://tiendahusqvarna.es/sopladores/soplador-gasolina/soplador-570bts/", "pt": "https://lojahusqvarna.pt/sopradores/sopradores-gasolina/570-bts/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Soplador 570BTS", "id": "19116", "price": "", "category": "Sopladores", "variant": "Gasolina"}}
+          ],
+          "motoazadas": [
+            {"src": "/images/{locale}/slide14/motoazadas/carrusel-motocultor-motoazada_00.png", "href": {"es": "https://www.husqvarna.com/es/motoazadas/tr348/", "pt": "https://www.husqvarna.com/pt/motoenxadas/tr348/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motoazada TR348", "id": "19120", "price": "", "category": "Motoazadas", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide14/motoazadas/carrusel-motocultor-motoazada_01.png", "href": {"es": "https://tiendahusqvarna.es/motoazadas/motoazadas-gasolina/motoazada-tf230/", "pt": "https://lojahusqvarna.pt/motoenxadas/tf230/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motoazada TF230", "id": "19121", "price": "", "category": "Motoazadas", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide14/motoazadas/carrusel-motocultor-motoazada_02.png", "href": {"es": "https://tiendahusqvarna.es/motoazadas/motoazadas-gasolina/motoazada-tf338/", "pt": "https://lojahusqvarna.pt/motoenxadas/tf338/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Motoazada TF338", "id": "19122", "price": "", "category": "Motoazadas", "variant": "Gasolina"}}
+          ],
+          "nieve": [
+            {"src": "/images/{locale}/slide14/nieve/carrusel-soplador-nieve_00.png", "href": {"es": "https://tiendahusqvarna.es/soplanieves/quitanieves-st227p/", "pt": "https://lojahusqvarna.pt/limpa-neves/husqvarna-st-227p/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Quitanieves ST227P", "id": "19130", "price": "", "category": "Quitanieves", "variant": "Gasolina"}},
+            {"src": "/images/{locale}/slide14/nieve/carrusel-soplador-nieve_01.png", "href": {"es": "https://tiendahusqvarna.es/soplanieves/soplanieves-st-427t/", "pt": "https://lojahusqvarna.pt/limpa-neves/st427t/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Quitanieves ST427T", "id": "19131", "price": "", "category": "Quitanieves", "variant": "Gasolina"}}
+          ]
+        }
       }
     ]
   }
