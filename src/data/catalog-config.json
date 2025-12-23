@@ -2295,6 +2295,12 @@
             {"src": "/images/{locale}/slide14/nieve/carrusel-soplador-nieve_01.png", "href": {"es": "https://tiendahusqvarna.es/soplanieves/soplanieves-st-427t/", "pt": "https://lojahusqvarna.pt/limpa-neves/st427t/"}, "imgClassName": "!max-h-[336px] !max-w-[460px]", "productData": {"name": "Quitanieves ST427T", "id": "19131", "price": "", "category": "Quitanieves", "variant": "Gasolina"}}
           ]
         }
+      },
+      {
+        "id": "slide15",
+        "type": "customComponent",
+        "component": "Slide15",
+        "mobileViewports": 2
       }
     ]
   }

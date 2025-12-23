@@ -14,6 +14,10 @@ import { ProductData } from './index';
 export interface SlideConfig {
   /** Unique slide identifier */
   id: string;
+  /** Slide type: 'configured' (default) uses JSON layout, 'customComponent' uses a React component */
+  type?: 'configured' | 'customComponent';
+  /** Component name when type is 'customComponent' */
+  component?: string;
   /** Additional CSS classes for the slide container */
   className?: string;
   /** Inline CSS styles (for values not in Tailwind) */
@@ -24,8 +28,8 @@ export interface SlideConfig {
   padding?: string;
   /** Number of mobile viewport sections (2 for left/right, 4 for quadrants) */
   mobileViewports: 2 | 4;
-  /** Root layout for the slide */
-  layout: GridLayout | FlexLayout;
+  /** Root layout for the slide (required if type is not 'customComponent') */
+  layout?: GridLayout | FlexLayout;
   /** Localized content data */
   content?: Record<string, unknown>;
   /** Popup dialog configurations keyed by ID */

@@ -23,8 +23,8 @@ export const PlusIconTooltip = ({
       <button className="z-[10]">
         <Icon
           name={(iconName as IconName) ?? "plus"}
-          className={`box-content rounded-full bg-white text-[#1A355F]`}
-          size="24px"
+          className={`box-content rounded-full bg-white text-[#1A355F] w-3 h-3 md:w-6 md:h-6`}
+          size="100%"
         />
       </button>
       <div

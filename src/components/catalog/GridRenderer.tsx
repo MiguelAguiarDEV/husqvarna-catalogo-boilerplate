@@ -20,7 +20,7 @@ import { MenuLabels } from '../Header';
 import { useBreakpoint, resolveResponsiveValue, Breakpoint } from '@/hooks/useBreakpoint';
 
 interface GridRendererProps {
-  layout: GridLayout | FlexLayout;
+  layout?: GridLayout | FlexLayout;
   isActive?: boolean;
   onOpenPopup?: (popupKey: string) => void;
   onClickMenu?: (label: MenuLabels) => void;
@@ -34,6 +34,11 @@ export const GridRenderer: React.FC<GridRendererProps> = ({
   onClickMenu,
   className,
 }) => {
+  // Early return if no layout (e.g., customComponent slides)
+  if (!layout) {
+    return null;
+  }
+
   // Render Grid Layout
   if (isGridLayout(layout)) {
     const gridTemplateColumns = typeof layout.columns === 'number'

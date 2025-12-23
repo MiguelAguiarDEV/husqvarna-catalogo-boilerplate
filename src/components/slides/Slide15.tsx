@@ -198,7 +198,7 @@ export const Slide15: React.FC<Slide15Props> = ({ isActive }) => {
   };
   return (
     <>
-      <CarouselSlide className="p-[30px] ">
+      <CarouselSlide className="p-[10px] pr-[10px] md:p-[30px]">
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="https://player.vimeo.com/api/player.js"></script>
         <div className="flex flex-row gap-4">
