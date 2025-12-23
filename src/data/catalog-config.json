@@ -41,7 +41,7 @@
           "children": [
             {
               "id": "left-section",
-              "className": "h-full w-[67.52%]  flex flex-col gap-5",
+              "className": "h-full w-[60.52%]  flex flex-col gap-5",
               "layout": {
                 "type": "flex",
                 "direction": "column",
@@ -541,10 +541,10 @@
                       "className": "",
                       "content": {
                         "type": "image",
-                        "src": "/images/{locale}/slide4/gustoPorMaquinasBateria.png",
+                        "src": "/images/{locale}/slide4/gustoPorMaquinasBateria.jpg",
                         "alt": "Gusto por máquinas con batería",
                         "className": "object-fill",
-                        "width": 564,
+                        "width": 524,
                         "height": 430
                       }
                     },
@@ -556,7 +556,7 @@
                         "src": "/images/{locale}/slide4/vidaUtil.png",
                         "alt": "Prolonga la vida útil",
                         "className": "object-fill",
-                        "width": 553,
+                        "width": 453,
                         "height": 179
                       }
                     }
