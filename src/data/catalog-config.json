@@ -264,7 +264,7 @@
                       "style": { "overflow": "visible" },
                       "content": {
                         "type": "image",
-                        "src": "/images/{locale}/slide2/corteYTala.png",
+                        "src": "/images/{locale}/slide3/corteYTala.png",
                         "alt": "Corte y Tala",
                         "containerClassName": "h-full w-full",
                         "className": "cursor-pointer object-fill h-full w-full",
@@ -618,8 +618,8 @@
                               "id": "prueba-sistema",
                               "className": "",
                               "style": {
-                                  "width": "600px",
-                                  "height": "241px"
+                                  "width": "400px",
+                                  "height": "141px"
                                 },
                               "content": {
                                 "type": "image",
@@ -862,7 +862,7 @@
           "children": [
             {
               "id": "upper-content",
-              "className": "w-full",
+              "style": {"maxWidth": "1130px", "maxHeight": "511px"},
               "content": {
                 "type": "image",
                 "src": "/images/{locale}/slide7/midBackground.png",
